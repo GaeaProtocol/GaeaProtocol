@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+  <link rel="shortcut icon" href="../img/site/logo/logo2.png" type="image/x-icon">
+
+  <!-- EXTENDS -->
+   <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- STYLE -->
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/mapa.css" />
+  <link rel="stylesheet" href="../css/nemora.css" />
+  <link rel="stylesheet" href="../css/batalha.css">
+  <link rel="stylesheet" href="../css/tutorial.css">
+  <link rel="stylesheet" href="../css/selecaoMapa.css">
+
+  <!-- JS - VARS -->
+  <script src="../js/jogo/varJogo.js" defer></script>
+
+  <!-- ARREYS -->
+  <script src="../js/jogo/arreys/allCards.js" defer></script>
+  <script src="../js/jogo/arreys/cardsCria.js" defer></script>
+  <script src="../js/jogo/arreys/cardsDesert.js" defer></script>
+  <script src="../js/jogo/arreys/cardsMusic.js" defer></script>
+  <script src="../js/jogo/arreys/cardsUnicas.js" defer></script>
+  <script src="../js/jogo/arreys/allItems.js" defer></script>
+  <script src="../js/jogo/arreys/normalModels.js" defer></script>
+  <script src="../js/jogo/arreys/eliteModels.js" defer></script>
+  <script src="../js/jogo/arreys/bossModels.js" defer></script>
+  <script src="../js/jogo/arreys/perguntasQuiz.js" defer></script>
+
+  <!-- LIBRARY -->
+  <script src="../js/jogo/functions/other/ativarPretoBranco.js" defer></script>
+  <script src="../js/jogo/functions/other/togglePretoBranco.js" defer></script>
+  <script src="../js/jogo/functions/other/shakeScreenNatural.js"></script>
+  <script src="../js/jogo/functions/other/hasItem.js" defer></script>
+  <script src="../js/jogo/functions/other/atualizarLixo.js" defer></script>
+  <script src="../js/jogo/functions/player/gerarDeckAleatorio.js" defer></script>
+  <script src="../js/jogo/functions/other/atualizarDinheiro.js" defer></script>
+  <script src="../js/jogo/functions/player/updateHUD.js" defer></script>
+  <script src="../js/jogo/functions/player/glowPlayer.js" defer></script>
+  <script src="../js/jogo/functions/other/checkGameOver.js" defer></script>
+  <script src="../js/jogo/functions/other/fecharPopup.js" defer></script>
+  <script src="../js/jogo/functions/other/gerarCartasRecompensa.js" defer></script>
+  <script src="../js/jogo/functions/player/configurarSelecaoPersonagem.js" defer></script>
+  <script src="../js/jogo/functions/player/drawNewCards.js" defer></script>
+  <script src="../js/jogo/functions/enemys/nemora/mudarBackground.js" defer></script>
+  <script src="../js/jogo/functions/enemys/nemora/startNemoraSnow.js" defer></script>
+  <script src="../js/jogo/functions/enemys/nemora/stopNemoraSnow.js" defer></script>
+  <script src="../js/jogo/functions/enemys/nemora/startNemoraFire.js" defer></script>
+  <script src="../js/jogo/functions/enemys/nemora/stopNemoraFire.js" defer></script>
+  <script src="../js/jogo/functions/other/agathaSakura.js" defer></script>
+  <script src="../js/jogo/functions/other/aplicarBuff.js" defer></script>
+  <script src="../js/jogo/functions/itens/Kraken.js" defer></script>
+  <script src="../js/jogo/functions/itens/protetor.js" defer></script>
+  <script src="../js/jogo/functions/enemys/all/createEnemy.js" defer></script>
+  <script src="../js/jogo/functions/enemys/all/updateEnemyBars.js" defer></script>
+  <script src="../js/jogo/functions/enemys/all/spawnEnemis.js" defer></script>
+  <script src="../js/jogo/functions/enemys/all/displayInimigos.js" defer></script>
+  <script src="../js/jogo/functions/enemys/ia/startScreenGlitch.js" defer></script>
+  <script src="../js/jogo/functions/enemys/ia/stopScreenGlitch.js" defer></script>
+  <script src="../js/jogo/functions/enemys/ia/animateEnemyCrossScreen.js" defer></script>
+  <script src="../js/jogo/functions/enemys/ia/animateIAHit.js" defer></script>
+  <script src="../js/jogo/functions/enemys/ia/animateIAHitBasic.js" defer></script>
+  <script src="../js/jogo/functions/other/abrirRemocaoCartas.js" defer></script>
+  <script src="../js/jogo/functions/divsTransition/mostrarTela.js" defer></script>
+  <script src="../js/jogo/functions/divsTransition/proximaTela.js" defer></script>
+  <script src="../js/jogo/functions/divsTransition/irParaDiv2.js" defer></script>
+  <script src="../js/jogo/functions/divsTransition/irParaDiv4.js" defer></script>
+  <script src="../js/jogo/functions/divsTransition/irParaDiv5.js" defer></script>
+  <script src="../js/jogo/functions/divsTransition/irParaDiv6.js" defer></script>
+  <script src="../js/jogo/functions/divsTransition/irParaDiv11.js" defer></script>
+  <script src="../js/jogo/functions/divsTransition/voltarAnterior.js" defer></script>
+  <script src="../js/jogo/functions/other/selecaoPlayerUnic.js" defer></script>
+  <script src="../js/jogo/functions/other/agathaTrauma.js" defer></script>
+  <script src="../js/jogo/functions/other/agatha.js" defer></script>
+
+  <!-- MAIN -->
+  <script src="../js/jogo/functions/other/setas.js" defer></script>
+
+  <script src="../js/jogo/main.js" defer></script>
+
+  <!-- <script src="../js/batalha.js" defer></script> -->
+</head>
+<div id="nemoraSnow"></div>
+<div id="nemoraFire"></div>
+<div id="agathaSakura"></div>
+<div id="hospitalMelancholy"></div>
+
+<body>
+  <div id="tutorial-overlay" style="display:none;">
+    <img id="tutorial-img" src="" alt="">
+    <div id="tutorial-box">
+      <img id="tutorial-img2" src="" alt="">
+      <p id="tutorial-text"></p>
+      <span id="tutorial-hint"><i>-- clique em qualquer lugar para avançar --</i></span>
+    </div>
+    <img id="tutorial-img3" src="" alt="" style="display:none;">
+    <button id="tutorial-skip">PULAR DIALOGO</button>
+  </div>
+  <div id="game">
+<div class="tela selecaoPlayer" id="div1">
+
+  <!-- ÁREA DE SELEÇÃO (FACÇÕES / GRUPOS) -->
+  <div id="blocoSelecao">
+  <div id="selecaoPlayer">
+</div>
+</div>
+
+  <!-- PAINEL CENTRAL DE INFORMAÇÕES -->
+  <div id="painelInfo">
+
+    <!-- TOPO -->
+    <div id="topoInfo"></div>
+
+    <!-- MEIO -->
+    <div id="meioInfo">
+      <div id="blocoStatus">
+        <img id="imgPersonagem" src="" alt="">
+      <div id="extrasPersonagem" class="extras-box"></div>
+    </div>
+      
+      <div id="container-fimSelecao">
+        <button id="fimMenu"><a href="../index.html">VOLTAR PARA o MENU</a></button>
+        <button id="fimSelecao">CONFIRMAR SELEÇÃO DE PERSONAGEM</button>
+    </div>
+      
+    </div>
+
+  </div>
+
+  <!-- DESCRIÇÃO -->
+    <div id="descricaoInfo"></div>
+
+</div>
+
+    <div class="tela quiz" id="div11">
+      <div id="quiz-esquerda">
+        <img src="img/jogo/background/ia.png" alt="">
+      </div>
+      <div id="quiz-direita">
+      </div>
+    </div>
+    </div>
+    <div class="tela mapa" id="div2">
+      <div id="mapa"></div>
+      <canvas id="conexoes"></canvas>
+    </div>
+    <div class="tela mapa" id="div7">
+      <div id="mapa"></div>
+      <canvas id="conexoes"></canvas>
+    </div>
+    <div class="tela mapa" id="div8">
+      <div id="mapa"></div>
+      <canvas id="conexoes"></canvas>
+    </div>
+    <div class="tela mapa" id="div9">
+      <div id="mapa"></div>
+      <canvas id="conexoes"></canvas>
+    </div>
+    <div class="tela mapa" id="div10">
+      <div id="mapa"></div>
+      <canvas id="conexoes"></canvas>
+    </div>
+    <div class="tela luta" id="div3">
+      <div id="overlay"></div>
+      <div id="popup">
+        <p>Escolha sua recompensa!</p>
+        <div id="recompensa"></div>
+        <button onclick="fecharPopup(), displayInimigos()" id="lutaUm">PULAR</button>
+      </div>
+      <!-- FIM DE GAME -->
+      <div id="popupFinal">
+        <p>PARABENS VOCÊ GANHOU!</p>
+        
+        <a href="../index.html"><button id="fimDeJogo">Voltar para o menu</button></a>
+        <p class="msgParaJogador">GRAÇAS A VOCÊ, COM SUA VITÓRIA A MÃE NATUREZA PODE SE REERGUER, RECICLANDO O LIXO VOCÊ
+          CONSTRUIU UM FUTURO MELHOR</p>
+        <p class="lixoReciclado">♻️Lixos Reciclados♻️: 0</p>
+      </div>
+      <div id="popupOver">
+        <p>GAME OVER!</p>
+      
+        <a href="../index.html"><button id="fimDeJogo">Voltar para o menu</button></a>
+        <p class="msgParaJogador">SUA DERROTA LEVOU A DESTRUIÇÃO DO POUCO QUE EXISTIA DE VIDA E NATUREZA NO MUNDO, SEM
+          VOCÊ O MUNDO FOI TOMADO
+          PELO LIXO E POLUIÇÃO</p>
+        <p class="lixoReciclado">♻️Lixos Reciclados♻️: 0</p>
+      </div>
+
+      <header id="playerBarra">
+        <!-- itens e deck -->
+        <div id="itens">
+          <!-- <img src="../img/jogo/itens/Vida2.png" alt="">
+          <img src="img/jogo/itens/pedrasDeMana.png" alt="">
+          <img src="img/jogo/itens/pedrasDeMana.png" alt=""> -->
+        </div>
+        <div id="opcoes">
+          <p class="lixoReciclado">♻️Lixos Reciclados♻️: 0</p>
+          <p class="dinheiroAtual">🪙: 0</p>
+          <button class="opcoesConf infoEmojis">❓</button>
+          <button class="opcoesConf infoCards">🎴</button>
+        </div>
+
+        <!-- POPUP DECK ATUAL -->
+        <div id="popupOverlayDeck">
+          <div id="popupDeckAtual">
+            <button id="closePopupDeck">❌</button>
+            <h2>Cartas Atuais do Deck</h2>
+            <div id="deckContainer"></div>
+          </div>
+        </div>
+
+        <!-- POPUP DE OPÇÕES -->
+        <div id="popupOverlayOpcoes">
+          <div id="popupOpcoes">
+            <button id="closePopupOpcoes">❌</button>
+            <div id="carouselExampleIndicatorsOpcoes" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicatorsOpcoes" data-bs-slide-to="0"
+                  class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsOpcoes" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsOpcoes" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="infoTxt">
+                    <h1>TIPOS DE STATUS INIMIGOS</h1>
+                    <div class="infoTxtBoxs">
+                      <div class="infoTxtBox">
+                        <h1>TIPOS DE VIDA</h1>
+                        <p>💞 Inicio da batalha aumenta a vida maxima dos aliados adjacentes em 15 (dura até apos a
+                          morte)</p>
+                        <p>💤 Eu disperto e revivo mais forte</p>
+                        <p>🌵 reflete 5 de dano após o player usar uma carta em que eu tomo dano</p>
+                        <p>🪬 quando TODOS que tem esse status morrem, geram um novo inimigo</p>
+                        <p>🧿 imune a QUALQUER tipo de marcação de vida e ataque</p>
+                        <p>❄️ Estou marcado com FROST, não perco meus status de hp antes de ser marcado</p>
+                        <p>⛰️ Estou marcado com EARTH, não perco meus status de hp antes de ser marcado, sou imune a
+                          marcação de WATER(💧)</p>
+                        <p>💧 Estou marcado com WATER, não perco meus status de hp antes de ser marcado, sou
+                          imune a marcação de FIRE(🔥)</p>
+                        <p>🔥 Estou marcado com FIRE, não perco meus status de hp antes de ser marcado, sou imune a
+                          marcação de EARTH(⛰️)</p>
+                      </div>
+                      <div class="infoTxtBox">
+                        <h1>TIPOS DE ATAQUE</h1>
+                        <p>⚔️/❄️ atk normal</p>
+                        <p>🔱 ignora armadura</p>
+                        <p>🩸 Eu morro após atacar 3 vezes</p>
+                        <p>⁉️ Ação ocultada pelo inimigo</p>
+                        <p>(⚔️)⚜️ Aumento meu atk permanentemente (apenas ações dentro do parenteses)</p>
+                        <p>(⚔️)🌟 critico garantido (apenas ações dentro do parenteses)</p>
+                        <p>💚 prioriza curar aliados</p>
+                        <p>💊 auto cura</p>
+                        <p>(⚔️)💥 chance de (30%) crit X2 (apenas ações dentro do parenteses)</p>
+                        <p>(⚔️)🧨 chance de (15%) crit X4 (apenas ações dentro do parenteses)</p>
+                        <p>(⚔️)💣 chance de (10%) crit X5 (apenas ações dentro do parenteses)</p>
+                        <p>⚔️🎭💚 se não puder executar a primeira ação executa a segunda</p>
+                        <p>⚔️❓💚 pode executar 2 ações, ou uma ou outra (50% de chance)</p>
+                        <p>⚔️❔💚 pode executar 2 ações, porém uma possui mais chance
+                          que a outra</p>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="../img/jogo/background/backgroundMao.png" class="d-block w-100" alt="Concept art 1">
+                </div>
+                <div class="carousel-item">
+                  <div class="infoTxt">
+                    <div class="infoTxtBoxs">
+                      <div class="infoTxtBoxImg"></div>
+                    </div>
+                  </div>
+                  <img src="../img/jogo/background/backgroundMao.png" class="d-block w-100" alt="Concept art 1">
+                </div>
+                <div class="carousel-item">
+                  <div class="infoTxt">
+                    <h1>TIPOS DE CARTAS</h1>
+                    <div class="infoTxtBoxs">
+                      <div class="infoTxtBox">
+                        <div class="cardsTutorial">
+                          <div class="explicaCard">
+                            <p>⚔️ATAQUE⚔️</p>
+                            <img src="../img/jogo/cards/vermelho.png" alt="">
+                            <p>Cartas focadas em causar dano nos inimigos</p>
+                          </div>
+                          <div class="explicaCard">
+                            <p>🛡️DEFESA🛡️</p>
+                            <img src="../img/jogo/cards/azul.png" alt="">
+                            <p>Cartas focadas em se defender contra os inimigos</p>
+                          </div>
+                          <div class="explicaCard">
+                            <p>💚BUFF💚</p>
+                            <img src="../img/jogo/cards/verd.png" alt="">
+                            <p>Cartas focadas em buffs e cura</p>
+                          </div>
+                          <div class="explicaCard">
+                            <p>🗑️LIXO🗑️</p>
+                            <img src="../img/jogo/cards/cinza.png" alt="">
+                            <p>Cartas de lixo, podem ser recicladas por cartas de reciclagem, dependem de outra carta
+                              para serem uteis</p>
+                          </div>
+                        </div>
+                        <div class="cardsTutorial">
+                          <div class="explicaCard">
+                            <p>✨CINTILANTE✨</p>
+                            <img src="../img/jogo/cards/cintilante1.png" alt="">
+                            <p>Cartas muito poderosas de raridade alim do lendario (Não gera lixo apos ser usada)</p>
+                          </div>
+                          <div class="explicaCard">
+                            <p>🌧️❄️ELEMENTAIS⛰️🔥</p>
+                            <div id="cardsElementos">
+                              <img src="../img/jogo/cards/agua.png" alt="">
+                              <img src="../img/jogo/cards/fire.png" alt="">
+                              <img src="../img/jogo/cards/terra.png" alt="">
+                            </div>
+                            <p>Cartas de combo, dependem de ter inimigos marcados para serem eficazes (Não gera lixo
+                              apos ser usada)</p>
+                          </div>
+                          <div class="explicaCard">
+                            <p>♻️RECICLAGEM♻️</p>
+                            <img src="../img/jogo/cards/amarelo1.png" alt="">
+                            <p>Cartas de reciclagem dependem de cartas de lixo para serem funcionais (Não gera lixo apos
+                              ser usada)</p>
+                          </div>
+                          <div class="explicaCard">
+                            <p>💎RARIDADE💎</p>
+                            <p>Exites multiplos tipos de raridade que se aplica a todas as cartas exceto cintilante e
+                              cartas elementais que tem sua propria raridade, dentre elas, comum, raro, epicas e
+                              lendarias, suas bordas irão dizer sua raridade</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="../img/jogo/background/backgroundMao.png" class="d-block w-100" alt="Concept art 1">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="jogo">
+        <div id="battlefield">
+
+  <div class="buff-bar"></div>
+
+  <div id="player-area">
+
+    <div id="box-control">
+      <p id="lifeBar">❤️ <strong><span id="hp"></span></strong></p>
+    </div>
+
+    <!-- RHYTHM GAME AGORA AQUI -->
+    <div id="rhythmGame">
+
+      <div id="ui">
+        <div id="feverBar">
+          <div id="feverFill"></div>
+        </div>
+        <div id="judge"></div>
+      </div>
+
+      <div class="lane" data-key="a"><div class="hit-line"></div><div class="key">A</div></div>
+      <div class="lane" data-key="s"><div class="hit-line"></div><div class="key">S</div></div>
+      <div class="lane" data-key="d"><div class="hit-line"></div><div class="key">D</div></div>
+      <div class="lane" data-key="f"><div class="hit-line"></div><div class="key">F</div></div>
+
+    </div>
+
+  </div>
+
+  <div id="inimigo-area">
+    <div id="enemies"></div>
+    <div id="lifeBarsContainer"></div>
+  </div>
+
+</div>
+
+        <div id="hud">
+          <div><span id="icon-energy">🔷</span><strong><span id="energy">3</span></strong></div>
+          <button onclick="enemyTurn()" id="finalTurno">FINALIZAR TURNO</button>
+        </div>
+
+        <div id="cards"></div>
+      </div>
+      <button id="lutaUm" class="nada">voltar para mapa</button>
+    </div>
+    <div class="tela loja" id="div4">
+      <button id="lojaUm">voltar para o mapa</button>
+    </div>
+    <div class="tela inventario" id="div5">
+    </div>
+    <div class="tela ferreiro" id="div6">
+    </div>
+  </div>
+</body>
+
+</html>
