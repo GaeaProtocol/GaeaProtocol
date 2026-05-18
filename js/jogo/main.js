@@ -10462,14 +10462,28 @@ function addSorte() {
 // CALLING FUNCTIONS
 function trocarMusica(novaMusica, fadeDuration = 2000, targetVolume = 1) {
   try {
-    // Cancela fade anterior se existir
+
+    // =========================
+    // Se já for essa música, não faz nada
+    // =========================
+    if (currentMusic === novaMusica) {
+      return;
+    }
+
+    // =========================
+    // Cancela fades anteriores
+    // =========================
     if (musicFadeInterval) {
       clearInterval(musicFadeInterval);
     }
 
-    // Se não existir música atual, apenas toca normalmente
+    // =========================
+    // Primeira música
+    // =========================
     if (!currentMusic) {
+
       currentMusic = novaMusica;
+
       currentMusic.volume = 0;
       currentMusic.loop = true;
 
@@ -10477,61 +10491,85 @@ function trocarMusica(novaMusica, fadeDuration = 2000, targetVolume = 1) {
         console.warn('[Audio] Autoplay bloqueado pelo navegador:', error.message);
       });
 
-      currentMusic.play().catch(error => {
-        console.warn('[Audio] Autoplay bloqueado pelo navegador:', error.message);
-      });
-
-      // Fade in
       const step = 50 / fadeDuration;
 
       musicFadeInterval = setInterval(() => {
+
         if (currentMusic.volume < targetVolume) {
-          currentMusic.volume = Math.min(currentMusic.volume + step, targetVolume);
+          currentMusic.volume = Math.min(
+            currentMusic.volume + step,
+            targetVolume
+          );
         } else {
           clearInterval(musicFadeInterval);
         }
+
       }, 50);
 
       return;
     }
 
+    // =========================
+    // Fade out música antiga
+    // =========================
     const oldMusic = currentMusic;
 
-    // Fade out da música antiga
     const stepOut = 50 / fadeDuration;
 
     musicFadeInterval = setInterval(() => {
+
       if (oldMusic.volume > 0) {
-        oldMusic.volume = Math.max(oldMusic.volume - stepOut, 0);
+
+        oldMusic.volume = Math.max(
+          oldMusic.volume - stepOut,
+          0
+        );
+
       } else {
+
         clearInterval(musicFadeInterval);
 
         oldMusic.pause();
-        oldMusic.currentTime = 0;
 
-        // Troca para nova música
+        // =========================
+        // Nova música
+        // =========================
         currentMusic = novaMusica;
+
         currentMusic.volume = 0;
+        currentMusic.loop = true;
 
         currentMusic.play().catch(error => {
           console.warn('[Audio] Autoplay bloqueado pelo navegador:', error.message);
         });
 
-        // Fade in da nova
         const stepIn = 50 / fadeDuration;
 
         musicFadeInterval = setInterval(() => {
+
           if (currentMusic.volume < targetVolume) {
-            currentMusic.volume = Math.min(currentMusic.volume + stepIn, targetVolume);
+
+            currentMusic.volume = Math.min(
+              currentMusic.volume + stepIn,
+              targetVolume
+            );
+
           } else {
+
             clearInterval(musicFadeInterval);
+
           }
+
         }, 50);
+
       }
+
     }, 50);
 
   } catch (error) {
+
     console.warn('[Audio] Erro ao trocar música:', error.message);
+
   }
 }
 
