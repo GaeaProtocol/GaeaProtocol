@@ -19,8 +19,12 @@ let custoCuraMedico = 0; // Custo de cura no médico
 let custoVidaMaxMedico = 0; // Custo para aumentar vida máxima
 
 // CONFS - Configurações e estado visual/áudio
-var myMusic = new Audio("./../audio/artblock.ogg"); // Música de fundo
-myMusic.loop = true; // Música em loop
+let currentMusic = null;
+let musicFadeInterval = null;
+let defaltMusic = new Audio("./../audio/artblock.ogg"); // Música de fundo
+let agathaLar = new Audio("./../audio/FervorLar.mp3"); 
+let agathaTra = new Audio("./../audio/FervorTra.mp3"); 
+let agatha = new Audio("./../audio/agatha.mp3"); 
 let showingFloat = false; // Se está mostrando texto flutuante
 let nemoraDef = false; // Estado de defesa de Nemora
 let nemoraAtk = false; // Estado de ataque de Nemora

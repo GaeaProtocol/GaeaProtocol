@@ -177,7 +177,7 @@ function startFever() {
   if (feverMode === "lar") {
     jogo.style.backgroundImage =
       "url('../img/jogo/background/agathaLar.png')";
-
+    trocarMusica(agathaLar);
     startAgathaSakura();
     stopHospitalMelancholy();
     trocarFramePlayer("agatha");
@@ -185,7 +185,7 @@ function startFever() {
   } else {
     jogo.style.backgroundImage =
       "url('../img/jogo/background/agathaTra.png')";
-
+    trocarMusica(agathaTra);
     stopAgathaSakura();
     startHospitalMelancholy();
     trocarFramePlayer("agatha");
@@ -204,6 +204,7 @@ function disableFever() {
   feverFill.style.width = "0%";
   document.body.classList.remove("fever");
 
+  trocarMusica(agatha);
   stopHospitalMelancholy();
   stopAgathaSakura();
 

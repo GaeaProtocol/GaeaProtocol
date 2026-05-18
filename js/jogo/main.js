@@ -20,7 +20,7 @@ const buffStackingConfig = {
 document.getElementById('lutaUm').addEventListener('click', irParaDiv2);
 document.getElementById('lojaUm').addEventListener('click', irParaDiv2);
 // Botão confirmar seleção
-document.getElementById("fimSelecao").addEventListener("click", () => {
+document.getElementById("fimselecao").addEventListener("click", () => {
   if (!personagemSelecionado) {
     // Opcional: destacar os personagens para indicar que precisam ser selecionados
     const personagens = document.querySelectorAll(".personagem");
@@ -58,19 +58,19 @@ document.querySelectorAll('.pular').forEach(el => {
 });
 if (pagina === "tutorial.html") {
   iniciarTutorial([
-            "Ola seja bem vindo(a) ao GAEA PROTOCOL!",
-      "Aqui você aprenderá o básico. Eu serei sua tutora, você pode me chamar de GAEA.",
-      "Este é o início da sua jornada para restaurar a natureza corrompida por uma IA.",
-      "Mas vamos pelo começo",
-      "Há sua esquerda tem um painel de seleção de personagens nele você pode escolher tanto o grupo quanto os personagens desse grupo.",
-      "Nesse momento você só tem o piloto Jão desbloqueado no tutorial. Mas relaxe no modo normal haverá varios outros pilotos incriveis com mecanicas distintas!",
-      "No meio da tela tem a interface do piloto, seu nome e titulo, nivel de dificuldade (quanto mais 💀, maior a dificuldade), status basicos ❤️/🛡️/🤚/🔷 do piloto. E abaixo disso a imagem do piloto e ao lado dela suas passivas.",
-      "Passivas com a borda na cor vermelha são negativas, na cor verde são beneficas e amarelo significa que pode ser bom ou ruim, depende de como você vai interpretar e usar elas!",
-      "Caso tenha problemas em distinguir as cores, você pode sempre passar o mouse por cima!",
-      "Passando o mouse por cima aparece a descrição da passiva, seja boa ou ruim, leia com atenção pois ela pode mudar totalmente a forma como você vai jogar!",
-      "Na direita tem o estilo de jogo do personagem, cartas nas quais seu deck é focado e um trecho da historia do personagem.",
-      "Sinta-se a vontade para olhar e ler mais sobre o seu piloto! Voltaremos a nós falar após você clicar em \"Confirmar Seleção De Personagem\""
-          ], "./../img/jogo/gaeazinha.jpg");
+    "Ola seja bem vindo(a) ao GAEA PROTOCOL!",
+    "Aqui você aprenderá o básico. Eu serei sua tutora, você pode me chamar de GAEA.",
+    "Este é o início da sua jornada para restaurar a natureza corrompida por uma IA.",
+    "Mas vamos pelo começo",
+    "Há sua esquerda tem um painel de seleção de personagens nele você pode escolher tanto o grupo quanto os personagens desse grupo.",
+    "Nesse momento você só tem o piloto Jão desbloqueado no tutorial. Mas relaxe no modo normal haverá varios outros pilotos incriveis com mecanicas distintas!",
+    "No meio da tela tem a interface do piloto, seu nome e titulo, nivel de dificuldade (quanto mais 💀, maior a dificuldade), status basicos ❤️/🛡️/🤚/🔷 do piloto. E abaixo disso a imagem do piloto e ao lado dela suas passivas.",
+    "Passivas com a borda na cor vermelha são negativas, na cor verde são beneficas e amarelo significa que pode ser bom ou ruim, depende de como você vai interpretar e usar elas!",
+    "Caso tenha problemas em distinguir as cores, você pode sempre passar o mouse por cima!",
+    "Passando o mouse por cima aparece a descrição da passiva, seja boa ou ruim, leia com atenção pois ela pode mudar totalmente a forma como você vai jogar!",
+    "Na direita tem o estilo de jogo do personagem, cartas nas quais seu deck é focado e um trecho da historia do personagem.",
+    "Sinta-se a vontade para olhar e ler mais sobre o seu piloto! Voltaremos a nós falar após você clicar em \"Confirmar Seleção De Personagem\""
+  ], "./../img/jogo/gaeazinha.jpg");
 }
 // INTERNAL FUNCTIONS LIBRARY
 // CONFS
@@ -664,7 +664,7 @@ function checkEnemies() {
             // Registrar vitória
             // registrarPartida('Vitória');
             feverActive = false;
-            if (personagemSelecionado==="agatha") disableFever();
+            if (personagemSelecionado === "agatha") disableFever();
             const overlay = document.getElementById("overlay");
             overlay.style.display = "block";
             overlay.classList.add("popup-opacity");
@@ -953,7 +953,7 @@ function drawCards() {
       }
 
       if (card.name === "Erro") {
-        
+
       } else {
         div.innerHTML = `
           <img src="${card.img}" alt="${card.name}">
@@ -1687,7 +1687,7 @@ function drawCards() {
         //☀️
         else if (card.name === "Justiça De Meet") {
           if (aliado) {
-            causarDano(card.power*(getCargas("sol") + getCargas("lua")), "area");
+            causarDano(card.power * (getCargas("sol") + getCargas("lua")), "area");
             matarAliado();
             consumirCargas("lua", getCargas("lua"));
             consumirCargas("sol", getCargas("sol"));
@@ -1731,18 +1731,18 @@ function drawCards() {
         //☀️
         else if (card.name === "Arma Divina") {
           chuvaDeGolpes(1);
-          valor=card.power;
+          valor = card.power;
           if (cleopatraOP) {
-            valor=card.power*2;
+            valor = card.power * 2;
           }
           aplicarBuffsPower(2, 999, "sol");
           causarDano(valor, "unico");
         }
         //☀️
         else if (card.name === "Proteção Divina") {
-          valor=card.power;
+          valor = card.power;
           if (cleopatraOP) {
-            valor=card.power*2;
+            valor = card.power * 2;
           }
           aplicarBuffsPower(2, 999, "lua");
           allBuffs(valor, "def");
@@ -1768,9 +1768,9 @@ function drawCards() {
         //☀️
         else if (card.name === "Arsenal Anti Herege") {
           chuvaDeGolpes(10);
-          valor=card.power;
+          valor = card.power;
           if (cleopatraOP) {
-            valor=card.power*2;
+            valor = card.power * 2;
           }
           causarDano(valor, "area");
           allBuffs(valor, "def");
@@ -1831,42 +1831,42 @@ function drawCards() {
         }
         //🎵
         else if (card.name === "Cirurgia Forçada") {
-         gerarNotas(card.power, "tra",false, "area", 2);
+          gerarNotas(card.power, "tra", false, "area", 2);
         }
         //🎵
         else if (card.name === "Clave De Sol") {
-         gerarNotas(card.power, "tra",false, "unico", 1);
+          gerarNotas(card.power, "tra", false, "unico", 1);
         }
         //🎵
         else if (card.name === "Clave De Dó" || card.name === "Nota Defensiva") {
-         gerarNotas(card.power, "lar", false, "def", 2);
+          gerarNotas(card.power, "lar", false, "def", 2);
         }
         //🎵
         else if (card.name === "Clave De Fá") {
-         gerarNotas(card.power, "tra", false, "cura", 5);
+          gerarNotas(card.power, "tra", false, "cura", 5);
         }
         //🎵
         else if (card.name === "Nota Agressiva") {
-         gerarNotas(card.power, "lar", false, "unico", 1);
+          gerarNotas(card.power, "lar", false, "unico", 1);
         }
         //🎵
         else if (card.name === "Sakura Distante") {
-         gerarNotas(card.power, "lar", false, "ultimo", 1.3);
+          gerarNotas(card.power, "lar", false, "ultimo", 1.3);
         }
         else if (card.name === "Show Revigorante") {
-         gerarNotas(card.power, "lar", true, "none", 1.3, true);
+          gerarNotas(card.power, "lar", true, "none", 1.3, true);
         }
         //🎵
         else if (card.name === "Monitorando A Vida") {
-         gerarNotas(card.power, "lar", false, "cura", 4);
+          gerarNotas(card.power, "lar", false, "cura", 4);
         }
         //🎵
         else if (card.name === "Lar") {
-         gerarNotas(card.power, "lar", false, "cura", 2);
+          gerarNotas(card.power, "lar", false, "cura", 2);
         }
         //🎵
-        else if (card.name === "Partitura"||card.name === "Semibreve"||card.name === "Colcheias"||card.name === "Fusa"||card.name === "Seminima"||card.name === "Semifusa") {
-         aplicarBuffsPower(card.power, 999, "music");
+        else if (card.name === "Partitura" || card.name === "Semibreve" || card.name === "Colcheias" || card.name === "Fusa" || card.name === "Seminima" || card.name === "Semifusa") {
+          aplicarBuffsPower(card.power, 999, "music");
         }
         //  🎨🎨🎨🎨🎨 CRIA 🎨🎨🎨🎨🎨
         else if (card.name === "Trocando De Estilo") {
@@ -2042,7 +2042,7 @@ function drawCards() {
           if (criadoraModo) {
             if (consumirCargas("roxa", 3)) {
               causarDano(card.power, "unico");
-              chuvaDeGolpes(5,true);
+              chuvaDeGolpes(5, true);
             }
           }
         }
@@ -2715,7 +2715,7 @@ function drawCards() {
           floatText(document.getElementById("player"), `+${"0"}🛡️`, "cyan");
         }
         //🗑️
-        else if (card.name === "Cura Quebrada"|| card.name === "Erro") {
+        else if (card.name === "Cura Quebrada" || card.name === "Erro") {
           floatText(document.getElementById("player"), `+${"0"}💚`, "lime");
         }
         //🗑️
@@ -3750,7 +3750,7 @@ function aliadosBuff(atk = 0, hp = 0, def = 0, defInit = 0) {
   }
   atualizarAliadoHUD();
 }
-function checkNotes(){
+function checkNotes() {
   let music = getCargas("music");
   consumirCargas("music", music);
   return music;
@@ -3770,12 +3770,12 @@ function mapaCanvas(dv, fases, caminhos, corMapa1, corMapa2, iconBoss) {
 
   let extraCSS = "";
 
-if (personagemSelecionado === "cleopatra") {
-  extraCSS = `
+  if (personagemSelecionado === "cleopatra") {
+    extraCSS = `
   .loot, .inimigo, .loja, .quiz, .quiz2, .ferreiro, .hospital2, .inimigo2, .elite, .hospital, .boss { background: #fd0; border: 3px groove rgba(255, 234, 97, 1);}
   `;
-} else {
-  extraCSS = `
+  } else {
+    extraCSS = `
     .inimigo  { background: #d33; border: 3px groove rgba(241, 75, 75, 1); }
   .loot     { background: #fd0; border: 3px groove rgba(255, 234, 97, 1);}
   .loja     { background: #0d8; border: 3px groove rgba(102, 255, 97, 1);}
@@ -3788,7 +3788,7 @@ if (personagemSelecionado === "cleopatra") {
   .hospital { background: #0d8; border: 3px groove rgba(102, 255, 97, 1);}
   .boss     { background: #000; border: 3px groove rgba(241, 75, 75, 1); }
   `;
-}
+  }
 
   // Define CSS isolado
   const style = `
@@ -4131,30 +4131,30 @@ if (personagemSelecionado === "cleopatra") {
           el.dataset.pos = `${i}-${j}`;
           if (personagemSelecionado === "cleopatra") {
             el.textContent = {
-            boss: '❓',
-            inimigo: '❓',
-            elite: '❓',
-            loja: '❓',
-            quiz: '❓',
-            hospital: '❓',
-            ferreiro: '❓',
-            hospital2: '❓',
-            inimigo2: '❓',
-            quiz2: '❓',
-          }[nodo.tipo] || '';
+              boss: '❓',
+              inimigo: '❓',
+              elite: '❓',
+              loja: '❓',
+              quiz: '❓',
+              hospital: '❓',
+              ferreiro: '❓',
+              hospital2: '❓',
+              inimigo2: '❓',
+              quiz2: '❓',
+            }[nodo.tipo] || '';
           } else {
             el.textContent = {
-            boss: iconBoss,
-            inimigo: '💀',
-            elite: '☠️',
-            loja: '🪙',
-            quiz: '📚',
-            hospital: '💚',
-            ferreiro: '❓',
-            hospital2: '❓',
-            inimigo2: '❓',
-            quiz2: '❓',
-          }[nodo.tipo] || '';
+              boss: iconBoss,
+              inimigo: '💀',
+              elite: '☠️',
+              loja: '🪙',
+              quiz: '📚',
+              hospital: '💚',
+              ferreiro: '❓',
+              hospital2: '❓',
+              inimigo2: '❓',
+              quiz2: '❓',
+            }[nodo.tipo] || '';
           }
           el.addEventListener('click', () => clicarNodo(i, j));
           colDiv.appendChild(el);
@@ -7702,7 +7702,7 @@ function criarPlayerNaDiv3() {
         maoInicio = 4;
         limiteMao = 4;
         startNemoraSnow(false);
-      empurrarItemParaInventario(37);
+        empurrarItemParaInventario(37);
 
       }
       if (mapaBatalha == 19) {
@@ -7800,6 +7800,7 @@ function criarPlayerNaDiv3() {
       limiteMao = 8;
       playerDeck = [...characterDecks.agatha];
       mudarEnergia("🎵");
+      trocarMusica(agatha);
       break;
     default:
       playerImg.src = "./../img/jogo/extra/prototipo.png";
@@ -8586,11 +8587,11 @@ async function chuvaDeGolpes(qtd = 0, pd = false) {
 
     const efeito = document.createElement("img");
 
-    if (personagemSelecionado==="cleopatra") {
+    if (personagemSelecionado === "cleopatra") {
       efeito.src = "../img/jogo/player/animado/cleopatra/efeitos/cleo1.png";
     } else if (!criadoraModo) {
       efeito.src = "../img/jogo/player/animado/criadora/efeitos/criadora11.png";
-    } else if (pd){
+    } else if (pd) {
       efeito.src = "../img/jogo/player/animado/criadora/efeitos/criadora2.png";
     } else {
       efeito.src = "../img/jogo/player/animado/criadora/efeitos/criadora4.png";
@@ -9000,7 +9001,7 @@ function animarEspelhoFerrus(tipo, frames, opcoes = {}) {
 }
 async function animacaoTra() {
 
-  enginePaused = true; 
+  enginePaused = true;
 
   const container = document.createElement("div");
   container.id = "animacaoTra";
@@ -10459,13 +10460,82 @@ function addSorte() {
 }
 
 // CALLING FUNCTIONS
-try {
-  myMusic.play().catch(error => {
-    console.warn('[Audio] Autoplay bloqueado pelo navegador:', error.message);
-  });
-} catch (error) {
-  console.warn('[Audio] Erro ao tentar tocar música:', error.message);
+function trocarMusica(novaMusica, fadeDuration = 2000, targetVolume = 1) {
+  try {
+    // Cancela fade anterior se existir
+    if (musicFadeInterval) {
+      clearInterval(musicFadeInterval);
+    }
+
+    // Se não existir música atual, apenas toca normalmente
+    if (!currentMusic) {
+      currentMusic = novaMusica;
+      currentMusic.volume = 0;
+      currentMusic.loop = true;
+
+      currentMusic.play().catch(error => {
+        console.warn('[Audio] Autoplay bloqueado pelo navegador:', error.message);
+      });
+
+      currentMusic.play().catch(error => {
+        console.warn('[Audio] Autoplay bloqueado pelo navegador:', error.message);
+      });
+
+      // Fade in
+      const step = 50 / fadeDuration;
+
+      musicFadeInterval = setInterval(() => {
+        if (currentMusic.volume < targetVolume) {
+          currentMusic.volume = Math.min(currentMusic.volume + step, targetVolume);
+        } else {
+          clearInterval(musicFadeInterval);
+        }
+      }, 50);
+
+      return;
+    }
+
+    const oldMusic = currentMusic;
+
+    // Fade out da música antiga
+    const stepOut = 50 / fadeDuration;
+
+    musicFadeInterval = setInterval(() => {
+      if (oldMusic.volume > 0) {
+        oldMusic.volume = Math.max(oldMusic.volume - stepOut, 0);
+      } else {
+        clearInterval(musicFadeInterval);
+
+        oldMusic.pause();
+        oldMusic.currentTime = 0;
+
+        // Troca para nova música
+        currentMusic = novaMusica;
+        currentMusic.volume = 0;
+
+        currentMusic.play().catch(error => {
+          console.warn('[Audio] Autoplay bloqueado pelo navegador:', error.message);
+        });
+
+        // Fade in da nova
+        const stepIn = 50 / fadeDuration;
+
+        musicFadeInterval = setInterval(() => {
+          if (currentMusic.volume < targetVolume) {
+            currentMusic.volume = Math.min(currentMusic.volume + stepIn, targetVolume);
+          } else {
+            clearInterval(musicFadeInterval);
+          }
+        }, 50);
+      }
+    }, 50);
+
+  } catch (error) {
+    console.warn('[Audio] Erro ao trocar música:', error.message);
+  }
 }
+
+trocarMusica(defaltMusic);
 
 configurarSelecaoPersonagem();
 

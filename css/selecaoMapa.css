@@ -257,13 +257,14 @@
   animation: pulseAura 3s ease-in-out infinite;
 }
 
-#fimSelecao, #fimMenu {
+#fimselecao, #fimMenu {
+  z-index: 20;
   width: 80%;
-  height: 100px;
-  font-size: 80%;
+  height: 50px;
+  font-size: 55%;
   background-color: rgba(0, 188, 188, 0.521);
   border-radius: 0 45px 0 45px;
-  border: 5px solid rgba(0, 255, 255, 0.521);
+  border: 2px solid rgba(0, 255, 255, 0.521);
   color: aliceblue;
   padding: 10px;
   margin-bottom: 1%;
@@ -280,10 +281,10 @@
 #fimMenu{
   color: #ff9271;
   background-color: rgba(0, 188, 141, 0.521);
-  border: 5px solid rgba(0, 255, 191, 0.521);
+  border: 2px solid rgba(0, 255, 191, 0.521);
 }
 
-#fimSelecao::before, #fimMenu::before{
+#fimselecao::before, #fimMenu::before{
   content: "";
   position: absolute;
   top: 0;
@@ -299,12 +300,12 @@
   transition: 0.8s;
 }
 
-#fimSelecao:hover::before, #fimMenu:hover::before {
+#fimselecao:hover::before, #fimMenu:hover::before {
   left: 120%;
 }
 
-#fimSelecao:hover, #fimMenu:hover {
-  width: 90%;
+#fimselecao:hover, #fimMenu:hover {
+  max-width: 500px;
   background-color: rgba(2, 114, 0, 0.6);
   box-shadow: 2px 2px 50px 2px rgba(0, 255, 106, 0.521);
   border: 5px solid rgb(108, 223, 133);
@@ -323,6 +324,8 @@
   justify-content: center;
   gap: 10px;
   margin-right: 20px;
+  margin-top: -5px;
+  margin-bottom: 57px;
 }
 
 /* container lateral */

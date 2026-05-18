@@ -179,6 +179,8 @@ body {
 
 .fita {
   position: absolute;
+  top: 0px;
+  left: 0px;
   width: 20%;
   height: 100vh;
   min-height: 650px;
@@ -461,7 +463,7 @@ body {
 
 /* =================== BLOQUEIO MOBILE =================== */
 
-@media (max-width: 1825px) {
+@media (max-width: 1425px) {
   .screen-warning {
     display: flex;
     /* só aqui */
