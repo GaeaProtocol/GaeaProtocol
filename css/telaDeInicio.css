@@ -463,7 +463,7 @@ body {
 
 /* =================== BLOQUEIO MOBILE =================== */
 
-@media (max-width: 1425px) {
+@media (max-width: 1225px) {
   .screen-warning {
     display: flex;
     /* só aqui */
