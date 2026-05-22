@@ -4655,12 +4655,6 @@ async function executarTxtBoss() {
     switch (identificadorBoss) {
       // 11111
       case "Boss Alfa":
-        await iniciarTutorial(
-          ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é o Chefe dessa zona escolhido pela IA"],
-          "./../img/jogo/gaeazinha.jpg",
-          null,
-          "../img/jogo/inimigos/iconBoss/bossLobo.png",
-        );
         if (playerImgDialogo.src.includes("verde")) {
           await iniciarTutorial(
             ["Grrrrrrrr…",
@@ -4679,6 +4673,61 @@ async function executarTxtBoss() {
 
           await iniciarTutorial(
             ["putz… esse cachorro de novo nãoooooooo!"
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossLobo.png",
+          );
+        } else if (playerImgDialogo.src.includes("agatha")) {
+          await iniciarTutorial(
+            ["Hum... esse cheiro é novo para mim",
+              "Você já sentiu o cheiro de sangue?"
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossLobo.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Ele lembra ferrugem, você está ferido?",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossLobo.png",
+          );
+
+          await iniciarTutorial(
+            ["Fêmea esperta, é uma pena que você não pode ficar viva!",
+              "Ordens da \"Deusa\"",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossLobo.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["\"Deusa\"? aparentemente vocês criaram consciência e desenvolveram crenças. No final... até a ciência cedeu à religião?",
+              "Seria a religião algo necessário? Para até IAs criarem uma?",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossLobo.png",
+          );
+
+          await iniciarTutorial(
+            ["Eu acredito no que existe, diferente das suas superstições ridículas!",
+              "Sabem o que é errado e ainda fazem de propósito... sua raça me dá nojo! NOJO!",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossLobo.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Eu vou curar seu coração, se é que você tem um, é claro...",
             ],
             playerImgDialogo.src,
             null,
@@ -4746,12 +4795,6 @@ async function executarTxtBoss() {
         }
         break;
       case "PeruSterminador":
-        await iniciarTutorial(
-          ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é o Chefe dessa zona escolhido pela IA"],
-          "./../img/jogo/gaeazinha.jpg",
-          null,
-          "../img/jogo/inimigos/iconBoss/peru1.png",
-        );
         if (playerImgDialogo.src.includes("verde")) {
           await iniciarTutorial(
             [
@@ -4990,13 +5033,6 @@ async function executarTxtBoss() {
         break;
       case "Guinevere":
         await iniciarTutorial(
-          ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é o Chefe dessa zona escolhido pela IA"],
-          "./../img/jogo/gaeazinha.jpg",
-          null,
-          "../img/jogo/inimigos/iconBoss/guinevere1.png",
-        );
-
-        await iniciarTutorial(
           ["Me desculpe...",
             "Eu não consigo controlar..."
           ],
@@ -5083,6 +5119,34 @@ async function executarTxtBoss() {
             "inimigo"
           );
           inimigoPassifico();
+        } else if (playerImgDialogo.src.includes("agatha")) {
+          await iniciarTutorial(
+            ["Eu vejo seu sofrimento... deixe-me te curar, minha música pode salvar sua alma!",
+              "(Agatha começa a cantar e isso deixa o sistema de controle confuso)",
+              "(Guinevere consegue tirar o dispositivo de controle mental)",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/guinevere1.png",
+          );
+
+          await iniciarTutorial(
+            ["Obrigado! Muito obrigado, eu preciso achar Magnus agora!",
+              "Muito obrigado de novo, preciso ir!",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/guinevere1.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Adeus...",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/guinevere1.png",
+          );
         } else if (playerImgDialogo.src.includes("olga")) {
           await iniciarTutorial(
             ["Você…",
@@ -5153,13 +5217,6 @@ async function executarTxtBoss() {
       case "Boss Prj.Kraken":
         if (playerImgDialogo.src.includes("autoridadeDoPorto")) {
           await iniciarTutorial(
-            ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é o Chefe dessa zona escolhido pela IA"],
-            "./../img/jogo/gaeazinha.jpg",
-            null,
-            "../img/jogo/inimigos/iconBoss/bossKraken.png",
-          );
-
-          await iniciarTutorial(
             ["Alvo detectado…",
               "Você é irrelevante?",
               "Não.",
@@ -5199,6 +5256,50 @@ async function executarTxtBoss() {
             playerImgDialogo.src,
             null,
             "../img/jogo/inimigos/iconBoss/bossKraken.png",
+          );
+        } else if (playerImgDialogo.src.includes("agatha")) {
+          await iniciarTutorial(
+            ["Analise... Médica...",
+              "Frágil, fraca, irrelevante...",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossKraken.png",
+            "inimigo"
+          );
+          await iniciarTutorial(
+            ["É isso que você pensa de mim? Você não é o primeiro que pensa isso...",
+              "Vai me matar por ordens de seu mestre?",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossKraken.png",
+          );
+          await iniciarTutorial(
+            ["Lógico, é necessário o sacrifício da carne para que o metal governe.",
+              "O aço é mais forte que seus ossos, suas emoções desabrocham sua fraqueza.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossKraken.png",
+            "inimigo"
+          );
+          await iniciarTutorial(
+            ["Meu coração guia minha alma, meu cérebro guia o corpo.",
+              "Eu não posso salvar todos... mas quem estiver ao meu alcance jamais morrerá.",
+              "Vou salvar o máximo de pessoas.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossKraken.png",
+          );
+          await iniciarTutorial(
+            ["Tente! Cuidado para não se afogar no raso, criatura insignificante.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossKraken.png",
+            "inimigo"
           );
         } else if (playerImgDialogo.src.includes("fergus")) {
           await iniciarTutorial(
@@ -5245,13 +5346,6 @@ async function executarTxtBoss() {
           );
         } else {
           await iniciarTutorial(
-            ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é o Chefe dessa zona escolhido pela IA"],
-            "./../img/jogo/gaeazinha.jpg",
-            null,
-            "../img/jogo/inimigos/iconBoss/bossKraken.png",
-          );
-
-          await iniciarTutorial(
             ["Alvo detectado…",
               "Você é irrelevante.",
               "Carne… patética.",
@@ -5276,12 +5370,6 @@ async function executarTxtBoss() {
         }
         break;
       case "Pedro":
-        await iniciarTutorial(
-          ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é o Chefe dessa zona escolhido pela IA"],
-          "./../img/jogo/gaeazinha.jpg",
-          null,
-          "../img/jogo/inimigos/iconBoss/pedro1.png",
-        );
         if (playerImgDialogo.src.includes("verde")) {
           await iniciarTutorial(
             [
@@ -5433,13 +5521,6 @@ async function executarTxtBoss() {
         }
         break;
       case "Isla":
-        await iniciarTutorial(
-          ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é o Chefe dessa zona escolhido pela IA"],
-          "./../img/jogo/gaeazinha.jpg",
-          null,
-          "../img/jogo/inimigos/iconBoss/isla1.png",
-        );
-
         await iniciarTutorial(
           ["🎶la la la🎶",
             "???!",
@@ -5593,12 +5674,6 @@ async function executarTxtBoss() {
         break;
       // 33333
       case "Boss Paladium":
-        await iniciarTutorial(
-          ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é o Chefe dessa zona escolhido pela IA"],
-          "./../img/jogo/gaeazinha.jpg",
-          null,
-          "../img/jogo/inimigos/iconBoss/bossPaladium.png",
-        );
         if (playerImgDialogo.src.includes("verde")) {
           await iniciarTutorial(
             ["HEREGE!",
@@ -5656,6 +5731,40 @@ async function executarTxtBoss() {
             "inimigo"
           );
 
+        } else if (playerImgDialogo.src.includes("agatha")) {
+          await iniciarTutorial(
+            ["HEREGE!!!",
+              "SUA ALMA ESTÁ CONDENADA PELAS MINHAS MÃOS!",
+              "SEU SOFRIMENTO É O CANTO DOS ANJOS PARA MINHA DEUSA!",
+              "SEU DEUS NÃO PODE TE SALVAR DO MEU JULGAMENTO!",
+              "SUCUMBA AOS SEUS PECADOS!",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossPaladium.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Meu único pecado foi ter oprimido meu coração por tanto tempo.",
+              "Eu vivo sem poder errar, errar significa morte.",
+              "Sua \"Deusa\" te deu um coração, mas não te ensinou a amar.",
+              "Vou curar seu coração!",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossPaladium.png",
+          );
+
+          await iniciarTutorial(
+            ["BASTA! BLASFÊMIA!",
+              "Apenas venha e dê o melhor de si, eu não terei piedade de um pecador tão fraco como você!",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossPaladium.png",
+            "inimigo"
+          );
         } else if (playerImgDialogo.src.includes("lucius")) {
           await iniciarTutorial(
             ["HEREGE!",
@@ -5762,13 +5871,189 @@ async function executarTxtBoss() {
         }
         break;
       case "Boss Valquiria":
-        await iniciarTutorial(
-          ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é o Chefe dessa zona escolhido pela IA"],
-          "./../img/jogo/gaeazinha.jpg",
-          null,
-          "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-        );
-        if (playerImgDialogo.src.includes("cleide")) {
+        if (playerImgDialogo.src.includes("agatha")) {
+          await iniciarTutorial(
+            ["…",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["... Ué?",
+              "Você não vai falar nada? Tipo tentar me ameaçar ou jurar lealdade à IA?",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+          );
+
+          await iniciarTutorial(
+            ["…"
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Seu coração está inquieto, eu sinto...",
+              "Você tem uma alma? Sim, você é diferente.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+          );
+
+          await iniciarTutorial(
+            ["Bem ingênuo da sua parte presumir isso, não acha?",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+            "inimigo"
+          );
+          await iniciarTutorial(
+            ["Você tem sonhos? Creio que você pretende me matar, já que está bloqueando o caminho.",
+              "Já que eu vou \"morrer\", pelo menos responda às minhas dúvidas.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+          );
+
+          await iniciarTutorial(
+            ["Justo... eu... eu não posso ter sonhos. Sonhos representam fraqueza, emoções também.",
+              "Por isso sua raça será extinta, vocês são fracos, miseráveis e ficam sonhando. Sonhos não te levam a lugar nenhum!",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Você não respondeu à minha pergunta...",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+          );
+
+          await iniciarTutorial(
+            ["E por que eu devo dar satisfação a você?",
+              "Me dê um bom motivo.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Você pode acabar como eu... em sofrimento constante, com correntes em seus braços e espinhos na sua garganta que você mesmo colocou...",
+              "Eu não quero ver ninguém sofrer como eu sofri... eu me importo com seus sonhos. Se eu pudesse, faria dos seus sonhos os meus... apenas me conte.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+          );
+
+          await iniciarTutorial(
+            ["Eu... eu...",
+              "(até robôs choram?) eu...",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["GRITE!!! GRITE TUDO O QUE VOCÊ TEM PARA GRITAR! GRITE!!!",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+          );
+
+          await iniciarTutorial(
+            ["EU ODEIO ESSA VIDA! Eu não quero matar inocentes... eu... por favor me ajude... eu só queria poder voar igual minha heroína... eu... eu...",
+              "Desculpa... eu só queria voar... mas eu estou presa aqui... eu... eu...",
+
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Calma, eu estou ouvindo com calma. Me conte o seu desejo.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+          );
+
+          await iniciarTutorial(
+            ["Eu só queria voar... você pode me ajudar, tia?",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Tia? Estranho... quantos \"anos\" você tem em teoria?",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+          );
+
+          await iniciarTutorial(
+            ["7!",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["7 anos???",
+              "Como a IA pode fazer isso... não que eu entenda a lógica de idade para uma máquina.",
+              "Mas você parece uma criança... você é uma criança!",
+              "Eu vou te ajudar com seu sonho, nem que isso signifique derrotar a IA.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+          );
+
+          await iniciarTutorial(
+            ["Obrigado. Guardas dispensar, ordens superiores, protocolo de retirada.",
+              "Se importa se eu for com você? Eu posso te ajudar no caminho.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Claro, vamos lá, seus sonhos não podem esperar mais! (Valquiria se juntou ao seu grupo!)",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+          );
+        } else if (playerImgDialogo.src.includes("cleide")) {
           await iniciarTutorial(
             ["…",
               "Minha IA do céu…",
@@ -5846,14 +6131,75 @@ async function executarTxtBoss() {
         break;
       case "Solice a Esquecida":
         SoliceApareceu = true;
-        await iniciarTutorial(
-          ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é o Chefe dessa zona escolhido pela IA"],
-          "./../img/jogo/gaeazinha.jpg",
-          null,
-          "../img/jogo/inimigos/iconBoss/solice.png",
-        );
+        if (playerImgDialogo.src.includes("agatha")) {
+          await iniciarTutorial(
+            ["Paladium… traidor… nossa m-mã…",
+              "!!!",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/solice.png",
+            "inimigo"
+          );
 
-        if (playerImgDialogo.src.includes("sombraDaMorte")) {
+          await iniciarTutorial(
+            ["Calma... por favor eu não quero lutar, você está muito ferida. Eu sei que somos inimigos, mas eu não quero ver você sofrer...",
+              "Me permita te ajudar...",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/solice.png",
+          );
+
+          await iniciarTutorial(
+            ["Que coração... nobre. Você tem uma alma pura e ingênua.",
+              "Criança, me escute, nesse mundo é necessário malícia para sobreviver. Você vai morrer se continuar tentando ajudar seus inimigos.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/solice.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Você é minha inimiga? Eu apenas vejo pessoas e robôs morrendo.",
+              "E por quê? Todo mundo quer criar guerra, mas ninguém quer lutar... ninguém quer sofrer e ninguém quer morrer.",
+              "Eu luto por aqueles que não podem, eu luto pelos fracos, feridos e incapazes...",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/solice.png",
+          );
+
+          await iniciarTutorial(
+            ["Eu estou quase morta... é impossível!",
+              "Você salvaria a mim?",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/solice.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Eu salvaria a todos se eu pudesse, me deixe te ajudar...",
+              "(após algumas horas Agatha conseguiu salvar Solice da morte)",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/solice.png",
+          );
+
+          await iniciarTutorial(
+            ["Eu... te devo minha vida... por favor deixe-me te acompanhar. É meu dever agora protegê-la. Você salvou minha vida! É o mínimo que posso fazer por você... mandaram um anjo para me salvar enquanto a IA me abandonou... EU VOU FAZER ELA PAGAR PELO QUE FEZ!",
+              "(Solice se juntou ao grupo!)",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/aliados/iconAliado/solice.png",
+            "inimigo"
+          );
+        } else if (playerImgDialogo.src.includes("sombraDaMorte")) {
           await iniciarTutorial(
             ["Paladium… traidor… nossa m-mã…",
               "!!!",
@@ -5915,15 +6261,33 @@ async function executarTxtBoss() {
 
         if (hasItem(26)) {
           dialogoSolice = true
-          await iniciarTutorial(
-            ["Espere por favor!",
-              "Você sabe algo sobre essa chave?",
-              "Tinha seu nome escrito na caixa que encontrei"
-            ],
-            playerImgDialogo.src,
-            "./../img/jogo/itens/frostKey.png",
-            "../img/jogo/inimigos/iconBoss/solice.png",
-          );
+          let imgTxt = ""
+          if (playerImgDialogo.src.includes("agatha")) {
+            imgTxt = "../img/jogo/aliados/iconAliado/solice.png"
+          } else {
+            imgTxt = "../img/jogo/inimigos/iconBoss/solice.png"
+          }
+
+          if (playerImgDialogo.src.includes("agatha")) {
+            await iniciarTutorial(
+              ["Você sabe algo sobre essa chave?",
+                "Tinha seu nome escrito na caixa que encontrei"
+              ],
+              playerImgDialogo.src,
+              "./../img/jogo/itens/frostKey.png",
+              imgTxt,
+            );
+          } else {
+            await iniciarTutorial(
+              ["Espere por favor!",
+                "Você sabe algo sobre essa chave?",
+                "Tinha seu nome escrito na caixa que encontrei"
+              ],
+              playerImgDialogo.src,
+              "./../img/jogo/itens/frostKey.png",
+              imgTxt,
+            );
+          }
 
           await iniciarTutorial(
             ["Não é uma merá chave!",
@@ -5934,7 +6298,7 @@ async function executarTxtBoss() {
             ],
             playerImgDialogo.src,
             null,
-            "../img/jogo/inimigos/iconBoss/solice.png",
+            imgTxt,
             "inimigo"
           );
           if (hasItem(27)) {
@@ -5944,27 +6308,39 @@ async function executarTxtBoss() {
               ],
               playerImgDialogo.src,
               "./../img/jogo/itens/fireKey.png",
-              "../img/jogo/inimigos/iconBoss/solice.png",
+              imgTxt,
             );
 
-            await iniciarTutorial(
-              ["Você... Achou...",
-                "Precisa ir até ayla, ela é a única com poder suficiente para infundir esses fragmentos",
-                "Se eu estivesse menos ferida faria isso, sempre quis conhecer os deuses do outro mundo... Nemora...",
-                "Já ajudei com o que sabia, agora me ajude e me de uma morte digna"
-              ],
-              playerImgDialogo.src,
-              null,
-              "../img/jogo/inimigos/iconBoss/solice.png",
-              "inimigo"
-            );
+            if (playerImgDialogo.src.includes("agatha")) {
+              await iniciarTutorial(
+                ["Você... Achou...",
+                  "Precisamos ir até ayla, ela é a única com poder suficiente para infundir esses fragmentos, mesmo curada ainda estou muito fraca para fundir eles.",
+                ],
+                playerImgDialogo.src,
+                null,
+                imgTxt,
+                "inimigo"
+              );
+            } else {
+              await iniciarTutorial(
+                ["Você... Achou...",
+                  "Precisa ir até ayla, ela é a única com poder suficiente para infundir esses fragmentos",
+                  "Se eu estivesse menos ferida faria isso, sempre quis conhecer os deuses do outro mundo... Nemora...",
+                  "Já ajudei com o que sabia, agora me ajude e me de uma morte digna"
+                ],
+                playerImgDialogo.src,
+                null,
+                imgTxt,
+                "inimigo"
+              );
+            }
 
             await iniciarTutorial(
               ["Certamente"
               ],
               playerImgDialogo.src,
               null,
-              "../img/jogo/inimigos/iconBoss/solice.png",
+              imgTxt,
             );
           }
 
@@ -5974,122 +6350,82 @@ async function executarTxtBoss() {
               ],
               playerImgDialogo.src,
               null,
-              "../img/jogo/inimigos/iconBoss/solice.png",
+              imgTxt,
             );
 
-            await iniciarTutorial(
-              ["Muitos morrerão tentando achar!",
-                "Você apenas deu sorte e essa chave me pertencia!",
-                "Caso consiga fale com Ayla, ela é capaz de infundir essa chave!",
-                "Chega de falar, morra ou me derrote!"
-              ],
-              playerImgDialogo.src,
-              null,
-              "../img/jogo/inimigos/iconBoss/solice.png",
-              "inimigo"
-            );
+            if (playerImgDialogo.src.includes("agatha")) {
+              await iniciarTutorial(
+                ["Muitos morrerão tentando achar!",
+                  "Melhor deixar para lá",
+                  "Mas... Se achar ela, temos que falar com Ayla, ela tem poder suficiente para fundir as chaves!"
+                ],
+                playerImgDialogo.src,
+                null,
+                imgTxt,
+                "inimigo"
+              );
+            } else {
+              await iniciarTutorial(
+                ["Muitos morrerão tentando achar!",
+                  "Você apenas deu sorte e essa chave me pertencia!",
+                  "Caso consiga fale com Ayla, ela é capaz de infundir essa chave!",
+                  "Chega de falar, morra ou me derrote!"
+                ],
+                playerImgDialogo.src,
+                null,
+                imgTxt,
+                "inimigo"
+              );
+            }
           }
         }
         break;
       // 44444
       case "Medo De Ayla":
-        await iniciarTutorial(
-          ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é o Chefe dessa zona escolhido pela IA"],
-          "./../img/jogo/gaeazinha.jpg",
-          null,
-          "../img/jogo/inimigos/iconBoss/medo.png",
-        );
-
-        await iniciarTutorial(
-          ["N-não…",
-            "Você não machucaria a mim, não é?",
-            "Por favor… eu lhe imploro.",
-          ],
-          playerImgDialogo.src,
-          null,
-          "../img/jogo/inimigos/iconBoss/medo.png",
-          "inimigo"
-        );
-
-        await iniciarTutorial(
-          ["Não vou te machucar se me deixar passar!",
-          ],
-          playerImgDialogo.src,
-          null,
-          "../img/jogo/inimigos/iconBoss/medo.png"
-        );
-
-        await iniciarTutorial(
-          ["N-não posso…",
-            "Elas vão… a IA vai… n-não… NÃO!"
-          ],
-          playerImgDialogo.src,
-          null,
-          "../img/jogo/inimigos/iconBoss/medo.png",
-          "inimigo"
-        );
-
-        await iniciarTutorial(
-          ["Deve estar com defeito!"
-          ],
-          playerImgDialogo.src,
-          null,
-          "../img/jogo/inimigos/iconBoss/medo.png"
-        );
-
-        await iniciarTutorial(
-          ["Quem está com defeito é VOCÊ!",
-            "SE TOCAR UM DEDO NELA EU VOU TE DESPEDAÇAR!!!"
-          ],
-          playerImgDialogo.src,
-          null,
-          "../img/jogo/inimigos/iconBoss/raiva.png",
-          "inimigo"
-        );
-
-        await iniciarTutorial(
-          ["Quem disse isso?"
-          ],
-          playerImgDialogo.src,
-          null,
-          "../img/jogo/inimigos/iconBoss/medo.png"
-        );
-
-        await iniciarTutorial(
-          ["*Susurro*",
-            "Ayla..."
-          ],
-          playerImgDialogo.src,
-          null,
-          "../img/jogo/inimigos/iconBoss/Vulnerabilidade.png",
-          "inimigo"
-        );
-
-        await iniciarTutorial(
-          ["Onde se esconde?"
-          ],
-          playerImgDialogo.src,
-          null,
-          "../img/jogo/inimigos/iconBoss/medo.png"
-        );
-
-        await iniciarTutorial(
-          ["Esconde? Ela está bem na sua frenta...",
-            "Mostre ser uma ameaça e sofra as consequências!",
-            "Eu avisei..."
-          ],
-          playerImgDialogo.src,
-          null,
-          "../img/jogo/inimigos/iconBoss/tristeza.png",
-          "inimigo"
-        );
-
-        if (hasItem(26) && hasItem(27) && dialogoSolice) {
+        if (playerImgDialogo.src.includes("agatha") && dialogoSolice) {
           await iniciarTutorial(
-            ["Espere... você é a tal ayla? eu falei com Solise...",
-              "Ela disse que você pode me ajudar",
-              "Estrou com o Fragmento Do Mundo e o Coração Do Mundo!",
-              "Ela disse que você é a unica capaz de infundir eles..."
+            ["Por favor... não...",
+              "Solice? Você... mas... a IA ela...",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/medo.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Ayla, meu amor, por favor não chore ou tenha medo.",
+              "Esse anjo salvou minha vida, por favor ajude-nos! Podemos vencer a IA! Ayla... por favor!",
+            ],
+            "../img/jogo/aliados/iconAliado/solice.png",
+            null,
+            "../img/jogo/inimigos/iconBoss/ayla1.png",
+          );
+
+          await iniciarTutorial(
+            ["Meu amor... ele fala mais alto que minha ambição e ódio juntos.",
+              "Ok! Vamos atrás da IA...",
+              "(Ayla se juntou ao grupo!)",
+            ],
+            "../img/jogo/aliados/iconAliado/solice.png",
+            null,
+            "../img/jogo/inimigos/iconBoss/ayla1.png",
+            "inimigo"
+          );
+        } else if (playerImgDialogo.src.includes("agatha")) {
+          await iniciarTutorial(
+            ["N-não…",
+              "Você não machucaria a mim, não é?",
+              "Por favor… eu lhe imploro.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/medo.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Não vou te machucar se me deixar passar!",
             ],
             playerImgDialogo.src,
             null,
@@ -6097,66 +6433,204 @@ async function executarTxtBoss() {
           );
 
           await iniciarTutorial(
-            ["Solice... Quanto tempo não escuto esse nome... De onde me lembro...",
-              "Uma velha amiga, me lembrei, devo minha vida a ela",
-              "Vejo que carrega o sonho dela!",
-              "Vou lhe ajudar com isso, em troca deve deixar Medo em paz e partir desse lugar!"
+            ["N-não posso…",
+              "Elas vão… a IA vai… n-não… NÃO!"
             ],
             playerImgDialogo.src,
             null,
-            "../img/jogo/inimigos/iconBoss/ayla1.png",
+            "../img/jogo/inimigos/iconBoss/medo.png",
+            "inimigo"
+          );
+        } else {
+          await iniciarTutorial(
+            ["N-não…",
+              "Você não machucaria a mim, não é?",
+              "Por favor… eu lhe imploro.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/medo.png",
             "inimigo"
           );
 
           await iniciarTutorial(
-            ["OK"
+            ["Não vou te machucar se me deixar passar!",
             ],
             playerImgDialogo.src,
             null,
-            "../img/jogo/inimigos/iconBoss/ayla1.png"
+            "../img/jogo/inimigos/iconBoss/medo.png"
           );
 
           await iniciarTutorial(
-            ["Ah, isso me custa muito mana e energia...",
-              "*Ayla funde os fragmentos e algo acontece*"
+            ["N-não posso…",
+              "Elas vão… a IA vai… n-não… NÃO!"
             ],
             playerImgDialogo.src,
             null,
-            "../img/jogo/inimigos/iconBoss/ayla1.png",
+            "../img/jogo/inimigos/iconBoss/medo.png",
             "inimigo"
           );
-
-          shakeScreenNatural(30, 800);
 
           await iniciarTutorial(
-            ["Pronto eu fundi eles!",
-              "Eu senti uma energia poderosa com um mana imenso após fundir os fragmentos...",
-              "Preciso recuperar minhas forças, vá até a base da IA, a energia veio de lá, antigamente aquele local era um portal magico..."
+            ["Deve estar com defeito!"
             ],
             playerImgDialogo.src,
             null,
-            "../img/jogo/inimigos/iconBoss/ayla1.png",
+            "../img/jogo/inimigos/iconBoss/medo.png"
+          );
+
+          await iniciarTutorial(
+            ["Quem está com defeito é VOCÊ!",
+              "SE TOCAR UM DEDO NELA EU VOU TE DESPEDAÇAR!!!"
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/raiva.png",
             "inimigo"
           );
 
-          document.getElementById("overlay").style.display = "block";
-          document.getElementById("popup").style.display = "flex";
-          dialogoAyla = true;
-          inimigoPassifico();
+          await iniciarTutorial(
+            ["Quem disse isso?"
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/medo.png"
+          );
+
+          await iniciarTutorial(
+            ["*Susurro*",
+              "Ayla..."
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/Vulnerabilidade.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Onde se esconde?"
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/medo.png"
+          );
+
+          await iniciarTutorial(
+            ["Esconde? Ela está bem na sua frenta...",
+              "Mostre ser uma ameaça e sofra as consequências!",
+              "Eu avisei..."
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/tristeza.png",
+            "inimigo"
+          );
+
+          if (hasItem(26) && hasItem(27) && dialogoSolice) {
+            if (playerImgDialogo.src.includes("agatha")) {
+              await iniciarTutorial(
+                ["Ayla, meu amor, você consegui fundir esses fragmentos?",
+                ],
+                "../img/jogo/aliados/iconAliado/solice.png",
+                null,
+                "../img/jogo/inimigos/iconBoss/ayla1.png",
+              );
+
+              await iniciarTutorial(
+                ["Posso tentar!",
+                ],
+                "../img/jogo/aliados/iconAliado/solice.png",
+                null,
+                "../img/jogo/inimigos/iconBoss/ayla1.png",
+                "inimigo"
+              );
+
+              await iniciarTutorial(
+                ["Ah, isso me custa muito mana e energia...",
+                  "*Ayla funde os fragmentos e algo acontece*"
+                ],
+                "../img/jogo/aliados/iconAliado/solice.png",
+                null,
+                "../img/jogo/inimigos/iconBoss/ayla1.png",
+                "inimigo"
+              );
+
+              shakeScreenNatural(30, 800);
+
+              await iniciarTutorial(
+                ["Pronto eu fundi eles!",
+                  "Eu senti uma energia poderosa com um mana imenso após fundir os fragmentos...",
+                  "Preciso recuperar minhas forças, o mana veio da base da IA, antigamente aquele local era um portal magico... Precisamos ir lá!"
+                ],
+                "../img/jogo/aliados/iconAliado/solice.png",
+                null,
+                "../img/jogo/inimigos/iconBoss/ayla1.png",
+                "inimigo"
+              );
+            } else {
+              await iniciarTutorial(
+                ["Espere... você é a tal ayla? eu falei com Solise...",
+                  "Ela disse que você pode me ajudar",
+                  "Estrou com o Fragmento Do Mundo e o Coração Do Mundo!",
+                  "Ela disse que você é a unica capaz de infundir eles..."
+                ],
+                playerImgDialogo.src,
+                null,
+                "../img/jogo/inimigos/iconBoss/medo.png"
+              );
+
+              await iniciarTutorial(
+                ["Solice... Quanto tempo não escuto esse nome... De onde me lembro...",
+                  "Uma velha amiga, me lembrei, devo minha vida a ela",
+                  "Vejo que carrega o sonho dela!",
+                  "Vou lhe ajudar com isso, em troca deve deixar Medo em paz e partir desse lugar!"
+                ],
+                playerImgDialogo.src,
+                null,
+                "../img/jogo/inimigos/iconBoss/ayla1.png",
+                "inimigo"
+              );
+
+              await iniciarTutorial(
+                ["OK"
+                ],
+                playerImgDialogo.src,
+                null,
+                "../img/jogo/inimigos/iconBoss/ayla1.png"
+              );
+
+              await iniciarTutorial(
+                ["Ah, isso me custa muito mana e energia...",
+                  "*Ayla funde os fragmentos e algo acontece*"
+                ],
+                playerImgDialogo.src,
+                null,
+                "../img/jogo/inimigos/iconBoss/ayla1.png",
+                "inimigo"
+              );
+
+              shakeScreenNatural(30, 800);
+
+              await iniciarTutorial(
+                ["Pronto eu fundi eles!",
+                  "Eu senti uma energia poderosa com um mana imenso após fundir os fragmentos...",
+                  "Preciso recuperar minhas forças, vá até a base da IA, a energia veio de lá, antigamente aquele local era um portal magico..."
+                ],
+                playerImgDialogo.src,
+                null,
+                "../img/jogo/inimigos/iconBoss/ayla1.png",
+                "inimigo"
+              );
+
+              document.getElementById("overlay").style.display = "block";
+              document.getElementById("popup").style.display = "flex";
+              dialogoAyla = true;
+              inimigoPassifico();
+            }
+          }
         }
         break;
       case "Belinda":
-        await iniciarTutorial(
-          [
-            "Alerta crítico…",
-            "Uma presença ameaçadora foi detectada!",
-            "Possivelmente é o chefe dessa zona, escolhido pela IA."
-          ],
-          "./../img/jogo/gaeazinha.jpg",
-          null,
-          "../img/jogo/inimigos/iconBoss/belinda1.png"
-        );
-
         await iniciarTutorial(
           [
             "Então é você o rato que roubou uma de minhas peças de invocação?",
@@ -6287,13 +6761,6 @@ async function executarTxtBoss() {
         break
       case "Svetlana":
         await iniciarTutorial(
-          ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é a IA"],
-          "./../img/jogo/gaeazinha.jpg",
-          null,
-          "../img/jogo/inimigos/iconBoss/svetlana.png"
-        );
-
-        await iniciarTutorial(
           [
             "As cartas me disseram que você tem algo que me pertence!"
           ],
@@ -6384,6 +6851,42 @@ async function executarTxtBoss() {
             playerImgDialogo.src,
             null,
             "../img/jogo/inimigos/iconBoss/svetlana.png"
+          );
+        } else if (playerImgDialogo.src.includes("agatha")) {
+          await iniciarTutorial(
+            ["É...",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/svetlana.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Tudo bem???",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/svetlana.png",
+          );
+
+          await iniciarTutorial(
+            ["Eu... PRECISO te matar. Não é nada pessoal, sabe? E a culpa não é sua e tal, mas anjos não podem andar na Terra.",
+              "Você precisa morrer, tipo agora. Lamento por você ter nascido amaldiçoada.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/svetlana.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Como assim? Do que você está fa...",
+              "*Svetlana parte para o combate sem deixar Agatha terminar sua frase*",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/svetlana.png",
           );
         } else if (playerImgDialogo.src.includes("gaeaReen")) {
           await iniciarTutorial(
@@ -6477,8 +6980,8 @@ async function executarTxtBoss() {
           await iniciarTutorial(
             [
               "Assim, senhora maga, com todo o respeito a você e às suas cartas, mas...",
-              "Seu baralho está servindo como um gerador para mim.",
-              "Não sei de onde vem tanta energia, mas não posso devolvê-lo, ainda mais em um futuro onde isso é escasso."
+              "Seu baralho parece algo... Muito poderoso.",
+              "Não sei de onde vem tanta energia, mas não posso devolvê-lo."
             ],
             playerImgDialogo.src,
             null,
@@ -6544,6 +7047,120 @@ async function executarTxtBoss() {
             "../img/jogo/inimigos/iconBoss/ia1.png",
             "inimigo"
           );
+        } else if (playerImgDialogo.src.includes("criadora")) {
+          await iniciarTutorial(
+            ["Hum... quantos anos você tem?",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/ia1.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Parei de contar há muito tempo...",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/ia1.png",
+          );
+
+          await iniciarTutorial(
+            ["Análise de idioma... você é velha, sua linguagem e sotaque aparentemente do período Asuka no Japão?",
+              "Como você viveu tanto e continua jovem desse jeito?",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/ia1.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Não importa!",
+              "Você não pode privar o mundo das cores!",
+              "Assim que eu derrotar você, voltarei para minha missão.",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/ia1.png",
+          );
+
+          await iniciarTutorial(
+            ["E quem disse que você vai me derrotar com esse pincelzinho?",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/ia1.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Minha arma mágica é tinta, eu moldo ela na arma que eu quiser.",
+              "Pincel e arco... minhas flechas matam seu corpo e alma",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/ia1.png",
+          );
+        } else if (playerImgDialogo.src.includes("cleopatra")) {
+          await iniciarTutorial(
+            ["Hum… interessante.",
+              "Alguém chegou até aqui.",
+              "Você é...",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/ia1.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Ai que fofa, ela sabe quem eu sou. Só falta ela virar um robô gigante ou algo do tipo.",
+              "Aí eu te derroto e você revela uma segunda forma e conta o seu passado triste ou algo assim. Aí a gente destrói a floresta inteira em uma luta, e a cidade também, né?",
+              "Vida de herói é assim mesmo, a gente destrói cidades em lutas nas quais são para salvar a humanidade, sabe como é? As pessoas vão ficar sem casa? Sim, mas fazer o quê, né?",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/ia1.png",
+          );
+
+          await iniciarTutorial(
+            ["GAEA... GAEA ATENDA A MINHA LIGAÇÃO AGORA!",
+              "GAEA PARE DE CONTRATAR ESSES ESTRANHOS!",
+              "SEU DESESPERO É PATÉTICO MAS NÃO PRECISA CONTRATAR QUALQUER UM TAMBÉM!!!",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/ia1.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["Ei, eu não sou uma estranha, eu sou a heroína que esse mundo não precisa, mas tem!",
+              "Os portões se abrem! Você está enfrentando a deusa dos deuses do Egito!",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/ia1.png",
+          );
+
+          await iniciarTutorial(
+            ["Credo... nota: matar todos os egípcios e pessoas que vivem próximas a esse continente.",
+              "Preciso evitar que a sua loucura seja contagiosa, ou os humanos servem como escravos ou morrem, e no seu caso é a morte...",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/ia1.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            ["ANUBISSSSSS! bora colocar ela pra \"ORA\"!",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/ia1.png",
+          );
         } else {
           await iniciarTutorial(
             ["Hum… interessante.",
@@ -6585,13 +7202,6 @@ async function executarTxtBoss() {
         }
         break;
       case "Nemora":
-        await iniciarTutorial(
-          ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é...", "Erro de conexão...", "Corra...", "*A transmição se encerra*"],
-          "./../img/jogo/gaeazinha.jpg",
-          null,
-          "../img/jogo/inimigos/iconBoss/nemora1.png",
-        );
-
         if (playerImgDialogo.src.includes("gemea")) {
           await iniciarTutorial(
             ["Você entende?", "Yoshida"
