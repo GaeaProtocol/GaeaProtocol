@@ -6053,6 +6053,10 @@ async function executarTxtBoss() {
             null,
             "../img/jogo/inimigos/iconBoss/bossValquiria.png",
           );
+
+          document.getElementById("overlay").style.display = "block";
+              document.getElementById("popup").style.display = "flex";
+              inimigoPassifico();
         } else if (playerImgDialogo.src.includes("cleide")) {
           await iniciarTutorial(
             ["…",
@@ -6199,6 +6203,9 @@ async function executarTxtBoss() {
             "../img/jogo/aliados/iconAliado/solice.png",
             "inimigo"
           );
+          document.getElementById("overlay").style.display = "block";
+              document.getElementById("popup").style.display = "flex";
+              inimigoPassifico();
         } else if (playerImgDialogo.src.includes("sombraDaMorte")) {
           await iniciarTutorial(
             ["Paladium… traidor… nossa m-mã…",
@@ -6412,6 +6419,11 @@ async function executarTxtBoss() {
             "../img/jogo/inimigos/iconBoss/ayla1.png",
             "inimigo"
           );
+          if (!hasItem(26) || !hasItem(27) || !dialogoSolice){
+          document.getElementById("overlay").style.display = "block";
+              document.getElementById("popup").style.display = "flex";
+              inimigoPassifico();
+          }
         } else if (playerImgDialogo.src.includes("agatha")) {
           await iniciarTutorial(
             ["N-não…",
@@ -6567,6 +6579,10 @@ async function executarTxtBoss() {
                 "../img/jogo/inimigos/iconBoss/ayla1.png",
                 "inimigo"
               );
+              document.getElementById("overlay").style.display = "block";
+              document.getElementById("popup").style.display = "flex";
+              dialogoAyla = true;
+              inimigoPassifico();
             } else {
               await iniciarTutorial(
                 ["Espere... você é a tal ayla? eu falei com Solise...",
