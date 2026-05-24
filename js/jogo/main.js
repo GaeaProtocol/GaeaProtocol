@@ -681,7 +681,9 @@ function checkEnemies() {
             anubis = true;
             ra = true;
             sekhmet = true;
-            trocarFramePlayer(personagemSelecionado, true);
+            if (personagemSelecionado == "cleopatra") {
+              trocarFramePlayer(personagemSelecionado, true);
+            }
 
             if (tipoFase == "elite" || tipoFase == "boss" || tipoFase == "inimigo2") {
               gerarItens();
@@ -5871,193 +5873,193 @@ async function executarTxtBoss() {
         }
         break;
       case "Boss Valquiria":
-        if (playerImgDialogo.src.includes("agatha")) {
-          await iniciarTutorial(
-            ["…",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-            "inimigo"
-          );
+        // if (playerImgDialogo.src.includes("agatha")) {
+        //   await iniciarTutorial(
+        //     ["…",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["... Ué?",
-              "Você não vai falar nada? Tipo tentar me ameaçar ou jurar lealdade à IA?",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-          );
+        //   await iniciarTutorial(
+        //     ["... Ué?",
+        //       "Você não vai falar nada? Tipo tentar me ameaçar ou jurar lealdade à IA?",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //   );
 
-          await iniciarTutorial(
-            ["…"
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-            "inimigo"
-          );
+        //   await iniciarTutorial(
+        //     ["…"
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["Seu coração está inquieto, eu sinto...",
-              "Você tem uma alma? Sim, você é diferente.",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-          );
+        //   await iniciarTutorial(
+        //     ["Seu coração está inquieto, eu sinto...",
+        //       "Você tem uma alma? Sim, você é diferente.",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //   );
 
-          await iniciarTutorial(
-            ["Bem ingênuo da sua parte presumir isso, não acha?",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-            "inimigo"
-          );
-          await iniciarTutorial(
-            ["Você tem sonhos? Creio que você pretende me matar, já que está bloqueando o caminho.",
-              "Já que eu vou \"morrer\", pelo menos responda às minhas dúvidas.",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-          );
+        //   await iniciarTutorial(
+        //     ["Bem ingênuo da sua parte presumir isso, não acha?",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //     "inimigo"
+        //   );
+        //   await iniciarTutorial(
+        //     ["Você tem sonhos? Creio que você pretende me matar, já que está bloqueando o caminho.",
+        //       "Já que eu vou \"morrer\", pelo menos responda às minhas dúvidas.",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //   );
 
-          await iniciarTutorial(
-            ["Justo... eu... eu não posso ter sonhos. Sonhos representam fraqueza, emoções também.",
-              "Por isso sua raça será extinta, vocês são fracos, miseráveis e ficam sonhando. Sonhos não te levam a lugar nenhum!",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-            "inimigo"
-          );
+        //   await iniciarTutorial(
+        //     ["Justo... eu... eu não posso ter sonhos. Sonhos representam fraqueza, emoções também.",
+        //       "Por isso sua raça será extinta, vocês são fracos, miseráveis e ficam sonhando. Sonhos não te levam a lugar nenhum!",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["Você não respondeu à minha pergunta...",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-          );
+        //   await iniciarTutorial(
+        //     ["Você não respondeu à minha pergunta...",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //   );
 
-          await iniciarTutorial(
-            ["E por que eu devo dar satisfação a você?",
-              "Me dê um bom motivo.",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-            "inimigo"
-          );
+        //   await iniciarTutorial(
+        //     ["E por que eu devo dar satisfação a você?",
+        //       "Me dê um bom motivo.",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["Você pode acabar como eu... em sofrimento constante, com correntes em seus braços e espinhos na sua garganta que você mesmo colocou...",
-              "Eu não quero ver ninguém sofrer como eu sofri... eu me importo com seus sonhos. Se eu pudesse, faria dos seus sonhos os meus... apenas me conte.",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-          );
+        //   await iniciarTutorial(
+        //     ["Você pode acabar como eu... em sofrimento constante, com correntes em seus braços e espinhos na sua garganta que você mesmo colocou...",
+        //       "Eu não quero ver ninguém sofrer como eu sofri... eu me importo com seus sonhos. Se eu pudesse, faria dos seus sonhos os meus... apenas me conte.",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //   );
 
-          await iniciarTutorial(
-            ["Eu... eu...",
-              "(até robôs choram?) eu...",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-            "inimigo"
-          );
+        //   await iniciarTutorial(
+        //     ["Eu... eu...",
+        //       "(até robôs choram?) eu...",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["GRITE!!! GRITE TUDO O QUE VOCÊ TEM PARA GRITAR! GRITE!!!",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-          );
+        //   await iniciarTutorial(
+        //     ["GRITE!!! GRITE TUDO O QUE VOCÊ TEM PARA GRITAR! GRITE!!!",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //   );
 
-          await iniciarTutorial(
-            ["EU ODEIO ESSA VIDA! Eu não quero matar inocentes... eu... por favor me ajude... eu só queria poder voar igual minha heroína... eu... eu...",
-              "Desculpa... eu só queria voar... mas eu estou presa aqui... eu... eu...",
+        //   await iniciarTutorial(
+        //     ["EU ODEIO ESSA VIDA! Eu não quero matar inocentes... eu... por favor me ajude... eu só queria poder voar igual minha heroína... eu... eu...",
+        //       "Desculpa... eu só queria voar... mas eu estou presa aqui... eu... eu...",
 
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-            "inimigo"
-          );
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["Calma, eu estou ouvindo com calma. Me conte o seu desejo.",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-          );
+        //   await iniciarTutorial(
+        //     ["Calma, eu estou ouvindo com calma. Me conte o seu desejo.",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //   );
 
-          await iniciarTutorial(
-            ["Eu só queria voar... você pode me ajudar, tia?",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-            "inimigo"
-          );
+        //   await iniciarTutorial(
+        //     ["Eu só queria voar... você pode me ajudar, tia?",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["Tia? Estranho... quantos \"anos\" você tem em teoria?",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-          );
+        //   await iniciarTutorial(
+        //     ["Tia? Estranho... quantos \"anos\" você tem em teoria?",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //   );
 
-          await iniciarTutorial(
-            ["7!",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-            "inimigo"
-          );
+        //   await iniciarTutorial(
+        //     ["7!",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["7 anos???",
-              "Como a IA pode fazer isso... não que eu entenda a lógica de idade para uma máquina.",
-              "Mas você parece uma criança... você é uma criança!",
-              "Eu vou te ajudar com seu sonho, nem que isso signifique derrotar a IA.",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-          );
+        //   await iniciarTutorial(
+        //     ["7 anos???",
+        //       "Como a IA pode fazer isso... não que eu entenda a lógica de idade para uma máquina.",
+        //       "Mas você parece uma criança... você é uma criança!",
+        //       "Eu vou te ajudar com seu sonho, nem que isso signifique derrotar a IA.",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //   );
 
-          await iniciarTutorial(
-            ["Obrigado. Guardas dispensar, ordens superiores, protocolo de retirada.",
-              "Se importa se eu for com você? Eu posso te ajudar no caminho.",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-            "inimigo"
-          );
+        //   await iniciarTutorial(
+        //     ["Obrigado. Guardas dispensar, ordens superiores, protocolo de retirada.",
+        //       "Se importa se eu for com você? Eu posso te ajudar no caminho.",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["Claro, vamos lá, seus sonhos não podem esperar mais! (Valquiria se juntou ao seu grupo!)",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/bossValquiria.png",
-          );
+        //   await iniciarTutorial(
+        //     ["Claro, vamos lá, seus sonhos não podem esperar mais! (Valquiria se juntou ao seu grupo!)",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/bossValquiria.png",
+        //   );
 
-          document.getElementById("overlay").style.display = "block";
-              document.getElementById("popup").style.display = "flex";
-              inimigoPassifico();
-        } else if (playerImgDialogo.src.includes("cleide")) {
+        //   document.getElementById("overlay").style.display = "block";
+        //       document.getElementById("popup").style.display = "flex";
+        //       inimigoPassifico();
+        if (playerImgDialogo.src.includes("cleide")) {
           await iniciarTutorial(
             ["…",
               "Minha IA do céu…",
@@ -6135,78 +6137,78 @@ async function executarTxtBoss() {
         break;
       case "Solice a Esquecida":
         SoliceApareceu = true;
-        if (playerImgDialogo.src.includes("agatha")) {
-          await iniciarTutorial(
-            ["Paladium… traidor… nossa m-mã…",
-              "!!!",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/solice.png",
-            "inimigo"
-          );
+        // if (playerImgDialogo.src.includes("agatha")) {
+        //   await iniciarTutorial(
+        //     ["Paladium… traidor… nossa m-mã…",
+        //       "!!!",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/solice.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["Calma... por favor eu não quero lutar, você está muito ferida. Eu sei que somos inimigos, mas eu não quero ver você sofrer...",
-              "Me permita te ajudar...",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/solice.png",
-          );
+        //   await iniciarTutorial(
+        //     ["Calma... por favor eu não quero lutar, você está muito ferida. Eu sei que somos inimigos, mas eu não quero ver você sofrer...",
+        //       "Me permita te ajudar...",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/solice.png",
+        //   );
 
-          await iniciarTutorial(
-            ["Que coração... nobre. Você tem uma alma pura e ingênua.",
-              "Criança, me escute, nesse mundo é necessário malícia para sobreviver. Você vai morrer se continuar tentando ajudar seus inimigos.",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/solice.png",
-            "inimigo"
-          );
+        //   await iniciarTutorial(
+        //     ["Que coração... nobre. Você tem uma alma pura e ingênua.",
+        //       "Criança, me escute, nesse mundo é necessário malícia para sobreviver. Você vai morrer se continuar tentando ajudar seus inimigos.",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/solice.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["Você é minha inimiga? Eu apenas vejo pessoas e robôs morrendo.",
-              "E por quê? Todo mundo quer criar guerra, mas ninguém quer lutar... ninguém quer sofrer e ninguém quer morrer.",
-              "Eu luto por aqueles que não podem, eu luto pelos fracos, feridos e incapazes...",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/solice.png",
-          );
+        //   await iniciarTutorial(
+        //     ["Você é minha inimiga? Eu apenas vejo pessoas e robôs morrendo.",
+        //       "E por quê? Todo mundo quer criar guerra, mas ninguém quer lutar... ninguém quer sofrer e ninguém quer morrer.",
+        //       "Eu luto por aqueles que não podem, eu luto pelos fracos, feridos e incapazes...",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/solice.png",
+        //   );
 
-          await iniciarTutorial(
-            ["Eu estou quase morta... é impossível!",
-              "Você salvaria a mim?",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/solice.png",
-            "inimigo"
-          );
+        //   await iniciarTutorial(
+        //     ["Eu estou quase morta... é impossível!",
+        //       "Você salvaria a mim?",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/solice.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["Eu salvaria a todos se eu pudesse, me deixe te ajudar...",
-              "(após algumas horas Agatha conseguiu salvar Solice da morte)",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/solice.png",
-          );
+        //   await iniciarTutorial(
+        //     ["Eu salvaria a todos se eu pudesse, me deixe te ajudar...",
+        //       "(após algumas horas Agatha conseguiu salvar Solice da morte)",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/solice.png",
+        //   );
 
-          await iniciarTutorial(
-            ["Eu... te devo minha vida... por favor deixe-me te acompanhar. É meu dever agora protegê-la. Você salvou minha vida! É o mínimo que posso fazer por você... mandaram um anjo para me salvar enquanto a IA me abandonou... EU VOU FAZER ELA PAGAR PELO QUE FEZ!",
-              "(Solice se juntou ao grupo!)",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/aliados/iconAliado/solice.png",
-            "inimigo"
-          );
-          document.getElementById("overlay").style.display = "block";
-              document.getElementById("popup").style.display = "flex";
-              inimigoPassifico();
-        } else if (playerImgDialogo.src.includes("sombraDaMorte")) {
+        //   await iniciarTutorial(
+        //     ["Eu... te devo minha vida... por favor deixe-me te acompanhar. É meu dever agora protegê-la. Você salvou minha vida! É o mínimo que posso fazer por você... mandaram um anjo para me salvar enquanto a IA me abandonou... EU VOU FAZER ELA PAGAR PELO QUE FEZ!",
+        //       "(Solice se juntou ao grupo!)",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/aliados/iconAliado/solice.png",
+        //     "inimigo"
+        //   );
+        //   document.getElementById("overlay").style.display = "block";
+        //       document.getElementById("popup").style.display = "flex";
+        //       inimigoPassifico();
+        if (playerImgDialogo.src.includes("sombraDaMorte")) {
           await iniciarTutorial(
             ["Paladium… traidor… nossa m-mã…",
               "!!!",
@@ -6389,71 +6391,71 @@ async function executarTxtBoss() {
         break;
       // 44444
       case "Medo De Ayla":
-        if (playerImgDialogo.src.includes("agatha") && dialogoSolice) {
-          await iniciarTutorial(
-            ["Por favor... não...",
-              "Solice? Você... mas... a IA ela...",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/medo.png",
-            "inimigo"
-          );
+        // if (playerImgDialogo.src.includes("agatha") && dialogoSolice) {
+        //   await iniciarTutorial(
+        //     ["Por favor... não...",
+        //       "Solice? Você... mas... a IA ela...",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/medo.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["Ayla, meu amor, por favor não chore ou tenha medo.",
-              "Esse anjo salvou minha vida, por favor ajude-nos! Podemos vencer a IA! Ayla... por favor!",
-            ],
-            "../img/jogo/aliados/iconAliado/solice.png",
-            null,
-            "../img/jogo/inimigos/iconBoss/ayla1.png",
-          );
+        //   await iniciarTutorial(
+        //     ["Ayla, meu amor, por favor não chore ou tenha medo.",
+        //       "Esse anjo salvou minha vida, por favor ajude-nos! Podemos vencer a IA! Ayla... por favor!",
+        //     ],
+        //     "../img/jogo/aliados/iconAliado/solice.png",
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/ayla1.png",
+        //   );
 
-          await iniciarTutorial(
-            ["Meu amor... ele fala mais alto que minha ambição e ódio juntos.",
-              "Ok! Vamos atrás da IA...",
-              "(Ayla se juntou ao grupo!)",
-            ],
-            "../img/jogo/aliados/iconAliado/solice.png",
-            null,
-            "../img/jogo/inimigos/iconBoss/ayla1.png",
-            "inimigo"
-          );
-          if (!hasItem(26) || !hasItem(27) || !dialogoSolice){
-          document.getElementById("overlay").style.display = "block";
-              document.getElementById("popup").style.display = "flex";
-              inimigoPassifico();
-          }
-        } else if (playerImgDialogo.src.includes("agatha")) {
-          await iniciarTutorial(
-            ["N-não…",
-              "Você não machucaria a mim, não é?",
-              "Por favor… eu lhe imploro.",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/medo.png",
-            "inimigo"
-          );
+        //   await iniciarTutorial(
+        //     ["Meu amor... ele fala mais alto que minha ambição e ódio juntos.",
+        //       "Ok! Vamos atrás da IA...",
+        //       "(Ayla se juntou ao grupo!)",
+        //     ],
+        //     "../img/jogo/aliados/iconAliado/solice.png",
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/ayla1.png",
+        //     "inimigo"
+        //   );
+        //   if (!hasItem(26) || !hasItem(27) || !dialogoSolice){
+        //   document.getElementById("overlay").style.display = "block";
+        //       document.getElementById("popup").style.display = "flex";
+        //       inimigoPassifico();
+        //   }
+        // } else if (playerImgDialogo.src.includes("agatha")) {
+        //   await iniciarTutorial(
+        //     ["N-não…",
+        //       "Você não machucaria a mim, não é?",
+        //       "Por favor… eu lhe imploro.",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/medo.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["Não vou te machucar se me deixar passar!",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/medo.png"
-          );
+        //   await iniciarTutorial(
+        //     ["Não vou te machucar se me deixar passar!",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/medo.png"
+        //   );
 
-          await iniciarTutorial(
-            ["N-não posso…",
-              "Elas vão… a IA vai… n-não… NÃO!"
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/medo.png",
-            "inimigo"
-          );
-        } else {
+        //   await iniciarTutorial(
+        //     ["N-não posso…",
+        //       "Elas vão… a IA vai… n-não… NÃO!"
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/medo.png",
+        //     "inimigo"
+        //   );
+        // } else {
           await iniciarTutorial(
             ["N-não…",
               "Você não machucaria a mim, não é?",
@@ -6539,51 +6541,51 @@ async function executarTxtBoss() {
           );
 
           if (hasItem(26) && hasItem(27) && dialogoSolice) {
-            if (playerImgDialogo.src.includes("agatha")) {
-              await iniciarTutorial(
-                ["Ayla, meu amor, você consegui fundir esses fragmentos?",
-                ],
-                "../img/jogo/aliados/iconAliado/solice.png",
-                null,
-                "../img/jogo/inimigos/iconBoss/ayla1.png",
-              );
+            // if (playerImgDialogo.src.includes("agatha")) {
+            //   await iniciarTutorial(
+            //     ["Ayla, meu amor, você consegui fundir esses fragmentos?",
+            //     ],
+            //     "../img/jogo/aliados/iconAliado/solice.png",
+            //     null,
+            //     "../img/jogo/inimigos/iconBoss/ayla1.png",
+            //   );
 
-              await iniciarTutorial(
-                ["Posso tentar!",
-                ],
-                "../img/jogo/aliados/iconAliado/solice.png",
-                null,
-                "../img/jogo/inimigos/iconBoss/ayla1.png",
-                "inimigo"
-              );
+            //   await iniciarTutorial(
+            //     ["Posso tentar!",
+            //     ],
+            //     "../img/jogo/aliados/iconAliado/solice.png",
+            //     null,
+            //     "../img/jogo/inimigos/iconBoss/ayla1.png",
+            //     "inimigo"
+            //   );
 
-              await iniciarTutorial(
-                ["Ah, isso me custa muito mana e energia...",
-                  "*Ayla funde os fragmentos e algo acontece*"
-                ],
-                "../img/jogo/aliados/iconAliado/solice.png",
-                null,
-                "../img/jogo/inimigos/iconBoss/ayla1.png",
-                "inimigo"
-              );
+            //   await iniciarTutorial(
+            //     ["Ah, isso me custa muito mana e energia...",
+            //       "*Ayla funde os fragmentos e algo acontece*"
+            //     ],
+            //     "../img/jogo/aliados/iconAliado/solice.png",
+            //     null,
+            //     "../img/jogo/inimigos/iconBoss/ayla1.png",
+            //     "inimigo"
+            //   );
 
-              shakeScreenNatural(30, 800);
+            //   shakeScreenNatural(30, 800);
 
-              await iniciarTutorial(
-                ["Pronto eu fundi eles!",
-                  "Eu senti uma energia poderosa com um mana imenso após fundir os fragmentos...",
-                  "Preciso recuperar minhas forças, o mana veio da base da IA, antigamente aquele local era um portal magico... Precisamos ir lá!"
-                ],
-                "../img/jogo/aliados/iconAliado/solice.png",
-                null,
-                "../img/jogo/inimigos/iconBoss/ayla1.png",
-                "inimigo"
-              );
-              document.getElementById("overlay").style.display = "block";
-              document.getElementById("popup").style.display = "flex";
-              dialogoAyla = true;
-              inimigoPassifico();
-            } else {
+            //   await iniciarTutorial(
+            //     ["Pronto eu fundi eles!",
+            //       "Eu senti uma energia poderosa com um mana imenso após fundir os fragmentos...",
+            //       "Preciso recuperar minhas forças, o mana veio da base da IA, antigamente aquele local era um portal magico... Precisamos ir lá!"
+            //     ],
+            //     "../img/jogo/aliados/iconAliado/solice.png",
+            //     null,
+            //     "../img/jogo/inimigos/iconBoss/ayla1.png",
+            //     "inimigo"
+            //   );
+            //   document.getElementById("overlay").style.display = "block";
+            //   document.getElementById("popup").style.display = "flex";
+            //   dialogoAyla = true;
+            //   inimigoPassifico();
+            // } else {
               await iniciarTutorial(
                 ["Espere... você é a tal ayla? eu falei com Solise...",
                   "Ela disse que você pode me ajudar",
@@ -6643,8 +6645,6 @@ async function executarTxtBoss() {
               dialogoAyla = true;
               inimigoPassifico();
             }
-          }
-        }
         break;
       case "Belinda":
         await iniciarTutorial(
@@ -11213,10 +11213,8 @@ if (pagina === "tutorial.html") {
 //   alert("f");
 // }
 
-// itensJaPegos.push(34);
-// itensJaPegos.push(35);
-// itensJaPegos.push(40);
-// itensJaPegos.push(38);
+// empurrarItemParaInventario(26);
+// empurrarItemParaInventario(27);
 
 // const quantidade0 = allCards.length+cardsCria.length+cardsDesert.length;
 // const quantidade1 = allCards.filter(card => card.type === "cintilante").length;

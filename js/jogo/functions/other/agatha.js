@@ -113,7 +113,7 @@ function finalizarPontuacao(acao, tipo, divisor, especial) {
 }
 
 // =====================
-function gerarNotas(qtd, modoFever, acao, tipo, divisor, especial=false) {
+function gerarNotas(qtd, modoFever, acao, tipo, divisor, especial = false) {
   if (!feverActive) feverMode = modoFever;
 
   qtd += checkNotes();
@@ -209,8 +209,13 @@ function disableFever() {
   stopAgathaSakura();
 
   const jogo = document.getElementById("jogo");
-  jogo.style.backgroundImage = previousBackground;
-
+  const bg = getComputedStyle(jogo).backgroundImage;
+  if (
+    bg.includes("agathaLar.png") ||
+    bg.includes("agathaTra.png")
+  ) {
+    jogo.style.backgroundImage = previousBackground;
+  }
   lanes.forEach(l => {
     l._x = 0;
     l.style.transform = "translateX(0px)";
