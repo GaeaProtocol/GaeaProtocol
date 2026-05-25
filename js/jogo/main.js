@@ -1918,7 +1918,8 @@ function drawCards() {
         }
         //🎨
         else if (card.name === "Bebida Do Sacrificio") {
-          togglePretoBranco();
+          const html = document.documentElement;
+          if (html.style.filter === "grayscale(100%)") togglePretoBranco();
         }
         //🎨
         else if (card.name === "Escalada") {
@@ -9226,18 +9227,19 @@ async function chuvaDeGolpes(qtd = 0, pd = false) {
     efeito.style.position = "absolute";
     efeito.style.pointerEvents = "none";
 
-    /* 🔥 TAMANHO MAIOR E VARIADO */
+    /* TAMANHO MAIOR E VARIADO */
     const scale = 1.5 + Math.random() * 1.2;
     efeito.style.width = (100 * scale) + "px";
 
-    /* 🔥 POSIÇÃO TOTALMENTE ALEATÓRIA */
+    /* POSIÇÃO TOTALMENTE ALEATÓRIA */
     const startX = -300 - Math.random() * 500; // bem fora da tela
-    const startY = Math.random() * fieldHeight;
+    const margem = fieldHeight * 0.3;
+    const startY = margem + Math.random() * (fieldHeight - margem * 2);
 
     efeito.style.left = startX + "px";
     efeito.style.top = startY + "px";
 
-    /* 🔥 SOBREPOSIÇÃO (umas na frente das outras) */
+    /* SOBREPOSIÇÃO (umas na frente das outras) */
     efeito.style.zIndex = 9000 + Math.floor(Math.random() * 1000);
 
     battlefield.appendChild(efeito);
