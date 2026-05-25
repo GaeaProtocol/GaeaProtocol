@@ -5121,34 +5121,34 @@ async function executarTxtBoss() {
             "inimigo"
           );
           inimigoPassifico();
-        } else if (playerImgDialogo.src.includes("agatha")) {
-          await iniciarTutorial(
-            ["Eu vejo seu sofrimento... deixe-me te curar, minha música pode salvar sua alma!",
-              "(Agatha começa a cantar e isso deixa o sistema de controle confuso)",
-              "(Guinevere consegue tirar o dispositivo de controle mental)",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/guinevere1.png",
-          );
+        // } else if (playerImgDialogo.src.includes("agatha")) {
+        //   await iniciarTutorial(
+        //     ["Eu vejo seu sofrimento... deixe-me te curar, minha música pode salvar sua alma!",
+        //       "(Agatha começa a cantar e isso deixa o sistema de controle confuso)",
+        //       "(Guinevere consegue tirar o dispositivo de controle mental)",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/guinevere1.png",
+        //   );
 
-          await iniciarTutorial(
-            ["Obrigado! Muito obrigado, eu preciso achar Magnus agora!",
-              "Muito obrigado de novo, preciso ir!",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/guinevere1.png",
-            "inimigo"
-          );
+        //   await iniciarTutorial(
+        //     ["Obrigado! Muito obrigado, eu preciso achar Magnus agora!",
+        //       "Muito obrigado de novo, preciso ir!",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/guinevere1.png",
+        //     "inimigo"
+        //   );
 
-          await iniciarTutorial(
-            ["Adeus...",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/guinevere1.png",
-          );
+        //   await iniciarTutorial(
+        //     ["Adeus...",
+        //     ],
+        //     playerImgDialogo.src,
+        //     null,
+        //     "../img/jogo/inimigos/iconBoss/guinevere1.png",
+        //   );
         } else if (playerImgDialogo.src.includes("olga")) {
           await iniciarTutorial(
             ["Você…",
