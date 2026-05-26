@@ -8427,7 +8427,7 @@ function criarPlayerNaDiv3() {
       limiteMao = 8;
       playerDeck = [...characterDecks.agatha];
       mudarEnergia("🎵");
-      trocarMusica(agatha);
+      // trocarMusica(agatha);
       break;
     default:
       playerImg.src = "./../img/jogo/extra/prototipo.png";
