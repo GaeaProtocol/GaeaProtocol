@@ -11201,7 +11201,7 @@ function trocarMusica(novaMusica, fadeDuration = 2000, targetVolume = 1) {
   }
 }
 
-trocarMusica(defaltMusic);
+// trocarMusica(defaltMusic);
 
 configurarSelecaoPersonagem();
 
