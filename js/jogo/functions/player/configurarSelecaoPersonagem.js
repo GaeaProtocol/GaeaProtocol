@@ -12,7 +12,7 @@ function configurarSelecaoPersonagem() {
       escudo: 0,
       mao: 6,
       img: "./../img/jogo/player/jao.png",
-      lor: "\"Um cara é um humano mas também é um cara, e caras tem trabalho, caras que trabalham fazem muita coisa, e eu faço muita coisa, por isso eu sou o cara\". [...]<br><br> -Jão o cara",
+      lor: "Jão atualmente é um membro da principal divisão GAEA PROTOCOL, ele ajuda todas as demais divisões, mas sua principal divisão cuida da natureza, ele sempre sonhou em ser um lutador de MMA ou jogador de basquete, mas a verdade cruel é que ele só está no GAEA por conta de seu irmão Lucius, ele o contratou pelo simples fato de que ele não aguentava o Jão indo na sua casa jogar no seu \"Ycaixa 365\" o maior console do momento, então para disfarça o fato dele ser egoista ele obrigou contra a vontade do Jão a ele ir trabalhar na GAEA. Jão subiu de patente até que rápido, devido ao seu irmão ser extremamente conhecido e um dos homens mais importantes do GAEA, e lider do W.P, apesar de tudo Jão gostou do lugar, trabalhou bem, trabalhou bastante e praticamente morava lá, já que eles davam almoço grátis para os membros do GAEA, forneciam dormitórios e tinham uma área de descanso com o console do momento.<br><br>\"Um cara é um humano mas também é um cara, e caras tem trabalho, caras que trabalham fazem muita coisa, e eu faço muita coisa, por isso eu sou o cara\". <br><br> -Jão o cara",
       extras: [
         {
           img: "./../img/jogo/itens/peruEsterminador.png",
@@ -34,7 +34,7 @@ function configurarSelecaoPersonagem() {
       escudo: 0,
       mao: 5,
       img: "./../img/jogo/player/wallace.png",
-      lor: "Ex soldado da gaea, após achar um mecha de construção abandonado decidiu por conta propria ajudar, mesmo que aposentado e debilitado ele nunca deixou de acreditar em um futuro melhor [...] mas suas economias durante sua carreira podem ajudar com isso [...]",
+      lor: "Ex soldado da gaea, após achar um mecha de construção abandonado decidiu por conta propria ajudar, mesmo que aposentado e debilitado ele nunca deixou de acreditar em um futuro melhor [...] mas suas economias durante sua carreira podem ajudar com isso [...]<br><br>\"Descansar é para os mortos, pensão que eu estou acabado e morto, mas eu me sinto vivo\".<br><br> -Wallace o espectro da floresta",
       extras: [
         {
           img: "./../img/jogo/itens/criptoGaea.png",
@@ -56,7 +56,7 @@ function configurarSelecaoPersonagem() {
       escudo: 0,
       mao: 6,
       img: "./../img/jogo/player/animado/gaeaReen/statico/gaeaReen1.png",
-      lor: "[...]",
+      lor: "Elize é líder do GAEA PROTOCOL, juntamente de Magnolia, enquanto Magnolia é líder de operações e cuida da parte administrativa, Eliza é a representação de esperança, ela faz a front nas batalhas e cuida para que o meio ambiente seja salvo, ambas se respeitam e sabem que trabalhar em equipe é mais eficiente. Elize foi escolhida pela propria GÆA, uma entidade mágica muito antiga que representa a deusa do mundo, ela deixo um protocolo de último recurso, caso esse tipo de situação viesse a tona, assim surgindo o GAEA PROTOCOL (G.P), escolhidos pela GÆA para salvar o mundo de ser destruido, e Elize é sua representante, foi escolida por GÆA ao demonstrar que se importava com este mundo, após ser escolhida ela foi construido o G.P e sua base principal, mas ela não fez isso sozinha, ao seu lado estava Magnolia, uma mulher importante no governo do Brasil, na qual fazia parte do Ministério do Meio Ambiente, assim asumindo a frente junto de Elize para trazer e concientizar os demais países da ameaça da IA, que por sua vez surgiu inevitavelmente, cada país possui seu representante no conselho da GÆA, sendo respresentados por:<br><br>Elize - Brasil<br>Jorge - Colômbia<br>Bruno - Países Baixos<br>Lucius - Estados Unidos.<br>Clarice - Nova Zelândia<br>Lilia - Canadá.<br>Magnus - Alemanha<br><br>\"Se ninguém vai defender o mundo, então eu defenderei.\"<br><br> -Elize a esperança",
       extras: [
         {
           img: "./../img/jogo/cards/cintilante/gaea.png",
@@ -90,7 +90,7 @@ function configurarSelecaoPersonagem() {
       escudo: 0,
       mao: 5,
       img: "./../img/jogo/player/animado/bruno/statico/bruno1.png",
-      lor: "Líder do GLEBA PROTOCOL, um ex-membro do GAEA, decidiu continuar cuidando do meio ambiente, então decidiu ir para o GLEBA e rapidamente se tornou o líder[...]",
+      lor: "Líder da divisão GLEBA PROTOCOL (GLE.P), um ex-membro da divisão principal GAEA, decidiu continuar cuidando do meio ambiente, então decidiu ir para o GLEBA e rapidamente se tornou o líder[...]<br><br>\"Se ninguém resolver, deixa que eu resolvo\".<br><br> -Bruno",
       extras: [
         {
           img: "./../img/jogo/itens/sorteElemental.png",
@@ -112,7 +112,7 @@ function configurarSelecaoPersonagem() {
       escudo: 5,
       mao: 5,
       img: "./../img/jogo/player/autoridadeDoPorto.png",
-      lor: "Assim como seu pai ela assumiu o manto de autoridade do porto, aprendeu bem com seu velho estratégias muito boas de ataque a distância, mas ela se apaixonou pelo mar assim como sua mãe. [...]",
+      lor: "Assim como seu pai ela assumiu o manto de autoridade do porto, aprendeu bem com seu velho estratégias muito boas de ataque a distância, mas ela se apaixonou pelo mar assim como sua mãe.<br><br>Após seu pai e sua irmã embarcarem em uma viagem sem ela, clarice ficou triste mas seu pai disse antes de partir: \"Alguém tem que cuidar das minhas orcas meu anjo, quero que fique não por ser fraca, mas precisam de uma figura forte, e você é a segunda mulher mais forte que eu conheço, a primeira sempre será sua mãe, é por isso que tenho que ir, pela sua mãe, eu sei que você vai ficar bem\". Após a noticia do desaparecimento de seu pai, Clarice ficou desolada e completamente depresiva, não saia do seu quarto no barco de seu pai, que estáva na base central do porto, até que um dia, Magnolia, a lider do GAEA PROTOCOL apareceu, decidida a unificar o pessoal do porto a serem uma divisão do GAEA, ela foi conversar com a lendária Autoridade Do Porto, ao chegar soube que o cargo havia sido passado para sua filha mais velha, ela convocou Clarice para uma reunião, mas de nada adiantou, nada fazia ela sair daquele quarto, após alguns dias ela voltou com 3 membros principais do GAEA, Lucius líder do W.P, Bruno líder do GLE.P e a inesperadamente a lendária Lilia líder do GLA.P foi junto, após bater na porta, Clarice já havia deixado claro que não queria conversa, então um a um tentou conversar com ela, primeiro Bruno, Clarice não respondeu a nenhuma palavra, depois Lucius com seu \"charme\" e ela respondeu com @!#%&*!, Magnolia foi obrigada a intervir com Bruno para evitar que o ego do Lucius falase mais alto, por fim sobrou só a Lilia, diferente dos outros ela simplesmente arrombou a porta... Magnolia tentou discutir mas o olhar frio de Lilia cortou qualquer palavra que ela pudesse dizer, ela simplesmente sentou do lado de Clarice e disse:<br><br> -Se seu pai estivesse vivo, ele teria afogado sua cara nesse mar sujo até você falar direito.<br><br>-QUEM É VOCÊ PARA FALAR ASSIM DELE?<br><br>-EU SOU A SUA MADRINHA! Goste você ou não, eu conheci seu pai e sua mãe, eles ecostaram nas geleiras e estavam encalhados sem combustivel, até que eu apareci e ajudei eles, ele agradesceu e me convidou para a base do porto, e foi la que a gente se conheceu e compartilhou histórias e piadas que só militares entendiam, conversa vai conversa vem, ele pediu para eu ser sua madrinha e cuidar de você caso algo acontecesse com ele.<br>Desculpa por não ter vindo antes, eu estava em uma campanha no norte lidando com uma cidade que hávia sido atacada pela IA, eu sei que você precisava de mim e sei como se sente[...].<br><br>-Então era você que me mandava aqueles presentes rosas de pandas? Eu nunca gostei, principalmente pelo fato de você não estar lá, mas eu entendo, você deve ser muito ocupada, salvando vidas todos os dias[...].<br><br>Após muita conversa, Lilia convenceu Clarice a assumir o manto de Autoridade Do Porto e preteger os mares, ela esitou mas se juntou ao GAEA PROTOCOL para poder ficar mais próxima da Lilia. Em questão de segundos o GAEA contava com a divisão ABISAL PROTOCOL, inicialmente era OCEAN PROTOCOL, mas Clarice convenceu a mudar o nome, e nesse dia o GAEA ganhou uma força imensa contra a IA, os exercitos do porto eram gigantes, eram maiores que toda a equipe do GAEA junto, eles eram responsaveis pelos mares e oceanos, TUDO o que diz respeito a esses lugar passa pela Autoridade Do Porto, tanto fauna, vegetação, solo... TUDO dentro do território do porto requer aprovação dela, e o porto também cuida desse ambiente, limpando os mares de degetos e protegendo de possiveis ataques da IA.<br><br>\"Eu protejo os mares que minha mãe tanto amou e meu pai lutou tanto para conquistar, eu sou a Autoridade Do Porto\".<br><br> -Clarice a Autoridade Do Porto",
       extras: [
         {
           img: "./../img/jogo/itens/sorteElemental.png",
@@ -123,7 +123,7 @@ function configurarSelecaoPersonagem() {
       ]
     },
     laranja: {
-      nome: "🐦‍🔥GABRIEL, O INABALÁVEL🐦‍🔥",
+      nome: "🐦‍🔥JORGE, O GUARDIÃO DA FAUNA🐦‍🔥",
       dificuldade: "🐦‍🔥NÍVEL DE DIFICULDADE: 💀💀🐦‍🔥",
       cor: "rgb(255, 128, 0)",
       descricao: "Agressivo e ágil, perfeito para combates rápidos, causa múltiplos danos em um único alvo.",
@@ -134,7 +134,7 @@ function configurarSelecaoPersonagem() {
       escudo: 0,
       mao: 6,
       img: "./../img/jogo/player/animado/gabriel/statico/gabriel1.png",
-      lor: "Salva animais com velocidade e precisão de situações inesperadas, combate à caça e ao tráfico animal.",
+      lor: "\"Eu odeio segundas.\"<br><br> -Gabriel o homem que odeia segundas",
       extras: [
         {
           img: "./../img/jogo/itens/olhoKraken.png",
@@ -156,7 +156,7 @@ function configurarSelecaoPersonagem() {
       escudo: 0,
       mao: 3,
       img: "./../img/jogo/player/malaquias.png",
-      lor: "Um homem de sorte? Não, a sorte que precisa desse homem, além da sua compulção por comprar ele curte apostar, um belo exemplo do tipo de pessoa que tem tudo para perder suas economias... Bom era para ele perder, mas aparentemente ele tem menos chance de perder? Ele não é um \"apostador qualquer\" ele utiliza de muita estrategia para ganhar dinheiro, ele percebeu que para sustentar seu vicio em comprar ele precisaria ser rico, e um mero trabalho jamais daria o dinheiro que ele precisa, além de CLT, dono de multiplas empresas, investidor de risco e mestre do poker, ele é um apostador nato, ele fez tudo isso só para... comprar coisas inuteis que ele nunca vai usar?",
+      lor: "\"Em desenvolvimento\"",
       extras: [
         {
           img: "./../img/jogo/cards/cintilante/niquel.png",
@@ -178,7 +178,7 @@ function configurarSelecaoPersonagem() {
       escudo: 0,
       mao: 5,
       img: "./../img/jogo/player/animado/lucius/statico/lucius1.png",
-      lor: "Ninguém sabe onde ele vive, por onde anda, ele vai trabalhar quando ele quer, pelo tempo que ele quer e até hoje se perguntam como ele não foi demitido. Se não fosse pelos seus feitos lendários ele provavelmente não estaria aqui, mas ninguém sabe se são verdade, mas tambem não discordam, afinal nenhum deles tem provas, mas seu irmão Jão é o único quem sabe a verdade e sabe por onde ele anda.",
+      lor: "\"Em desenvolvimento\"",
       extras: [
         {
           img: "./../img/jogo/itens/albumMagico.png",
@@ -189,7 +189,7 @@ function configurarSelecaoPersonagem() {
       ]
     },
     lilia: {
-      nome: "🐼❄️LILIA, LÍDER DO GLACIAL PROTOCOL❄️🐼",
+      nome: "🐼❄️LILIA, A LENDA GLACIAL❄️🐼",
       dificuldade: "🐼❄️NÍVEL DE DIFICULDADE: 💀💀💀💀❄️🐼",
       cor: "rgba(255, 128, 251, 1)",
       descricao: "Ela sabe muito bem se adaptar a tudo, ela pode parecer fraca e indefesa como um panda, mas quando ela se adapta, ela mostra suas imensas garras, com uma força, vitalidade, energia e pensamento incrível ela possui um deck de gelo capaz de causar muito estrago se usado sob condições favoráveis, combe marcação para turbinar seu dano e defesa imensuráveis.",
@@ -200,7 +200,7 @@ function configurarSelecaoPersonagem() {
       escudo: "0",
       mao: "4",
       img: "./../img/jogo/player/lilia.png",
-      lor: "Líder do GLACIAL PROTOCOL (GLA.P), dona de muitas lendas, ao mesmo tempo que sabem muito sobre ela também sabem tão pouco, há muitos rumores e histórias lendárias dela, uma grande estrategista, dizem que ela já foi capaz de apenas com mais 3 soldados do GLA.P derrubar um imenso batalhão de mais de 100mil robos corrompidos e destruir uma das principais bases da IA, também falam que ela sozinha já bateu de frente contra multiplos exercitos para salvar seu povo, verdade ou não, esse mitos ecoam por todos do GLA.P e até outros protocols já ouviram dela, ela é muito respeitada por todos, até Magnolia a lider do G.P a respeita muito[...], \"Será que é verdade que ela não precisa de um mecha?\"",
+      lor: "Líder da divisão GLACIAL PROTOCOL (GLA.P), dona de muitas lendas, ao mesmo tempo que sabem muito sobre ela também sabem tão pouco, há muitos rumores e histórias lendárias dela, uma grande estrategista, dizem que ela já foi capaz de apenas com mais 3 soldados do GLA.P derrubar um imenso batalhão de mais de 100mil robos corrompidos e destruir uma das principais bases da IA, também falam que ela sozinha já bateu de frente contra multiplos exercitos para salvar seu povo, verdade ou não, esse mitos ecoam por todos do GLA.P e até outras divisões dentro da GAEA já ouviram falar dela, ela é muito respeitada por todos, até Magnolia a lider do G.P a respeita muito.<br><br> \"O cabelo rosa, ele faz o trabalho de alvo, chama atenção dos ataques inimigos, esse é o segredo, o principal motivo de meus grupos não sofrerem baixas, e eu gosto de rosa\".<br><br> -Lilia",
       extras: [
         {
           img: "./../img/jogo/passivas/fria.png",
@@ -262,7 +262,7 @@ function configurarSelecaoPersonagem() {
       escudo: 17,
       mao: 5,
       img: "./../img/jogo/player/animado/ferrus/statico/ferrus1.png",
-      lor: "\"Em desenvolvimento\"[...]",
+      lor: "\"Em desenvolvimento\"",
       extras: [
         {
           img: "./../img/jogo/cards/atk/fraqueza.png",
