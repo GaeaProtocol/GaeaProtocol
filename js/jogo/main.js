@@ -685,6 +685,12 @@ function checkEnemies() {
               trocarFramePlayer(personagemSelecionado, true);
             }
 
+            if (mapaBatalha == 21 && personagemSelecionado == "lilia") {
+              criarPlayerNaDiv3()
+            } else if (mapaBatalha == 7 && personagemSelecionado == "lilia") {
+              criarPlayerNaDiv3()
+            }
+
             if (tipoFase == "elite" || tipoFase == "boss" || tipoFase == "inimigo2") {
               gerarItens();
               if (pagina === "tutorial.html") {
@@ -4449,12 +4455,6 @@ function mapaCanvas(dv, fases, caminhos, corMapa1, corMapa2, iconBoss) {
         32: "lutaMapa55.jpg"
       };
 
-      if (mapaBatalha == 19 && personagemSelecionado == "lilia") {
-        criarPlayerNaDiv3()
-      } else if (mapaBatalha == 11 && personagemSelecionado == "lilia") {
-        criarPlayerNaDiv3()
-      }
-
       const imagem = fundos[mapaBatalha];
       if (imagem) {
         document.getElementById("jogo").style.backgroundImage = `url('../img/jogo/background/${imagem}')`;
@@ -5122,34 +5122,34 @@ async function executarTxtBoss() {
             "inimigo"
           );
           inimigoPassifico();
-        // } else if (playerImgDialogo.src.includes("agatha")) {
-        //   await iniciarTutorial(
-        //     ["Eu vejo seu sofrimento... deixe-me te curar, minha música pode salvar sua alma!",
-        //       "(Agatha começa a cantar e isso deixa o sistema de controle confuso)",
-        //       "(Guinevere consegue tirar o dispositivo de controle mental)",
-        //     ],
-        //     playerImgDialogo.src,
-        //     null,
-        //     "../img/jogo/inimigos/iconBoss/guinevere1.png",
-        //   );
+          // } else if (playerImgDialogo.src.includes("agatha")) {
+          //   await iniciarTutorial(
+          //     ["Eu vejo seu sofrimento... deixe-me te curar, minha música pode salvar sua alma!",
+          //       "(Agatha começa a cantar e isso deixa o sistema de controle confuso)",
+          //       "(Guinevere consegue tirar o dispositivo de controle mental)",
+          //     ],
+          //     playerImgDialogo.src,
+          //     null,
+          //     "../img/jogo/inimigos/iconBoss/guinevere1.png",
+          //   );
 
-        //   await iniciarTutorial(
-        //     ["Obrigado! Muito obrigado, eu preciso achar Magnus agora!",
-        //       "Muito obrigado de novo, preciso ir!",
-        //     ],
-        //     playerImgDialogo.src,
-        //     null,
-        //     "../img/jogo/inimigos/iconBoss/guinevere1.png",
-        //     "inimigo"
-        //   );
+          //   await iniciarTutorial(
+          //     ["Obrigado! Muito obrigado, eu preciso achar Magnus agora!",
+          //       "Muito obrigado de novo, preciso ir!",
+          //     ],
+          //     playerImgDialogo.src,
+          //     null,
+          //     "../img/jogo/inimigos/iconBoss/guinevere1.png",
+          //     "inimigo"
+          //   );
 
-        //   await iniciarTutorial(
-        //     ["Adeus...",
-        //     ],
-        //     playerImgDialogo.src,
-        //     null,
-        //     "../img/jogo/inimigos/iconBoss/guinevere1.png",
-        //   );
+          //   await iniciarTutorial(
+          //     ["Adeus...",
+          //     ],
+          //     playerImgDialogo.src,
+          //     null,
+          //     "../img/jogo/inimigos/iconBoss/guinevere1.png",
+          //   );
         } else if (playerImgDialogo.src.includes("olga")) {
           await iniciarTutorial(
             ["Você…",
@@ -6457,19 +6457,141 @@ async function executarTxtBoss() {
         //     "inimigo"
         //   );
         // } else {
-          await iniciarTutorial(
-            ["N-não…",
-              "Você não machucaria a mim, não é?",
-              "Por favor… eu lhe imploro.",
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/medo.png",
-            "inimigo"
-          );
+        await iniciarTutorial(
+          ["N-não…",
+            "Você não machucaria a mim, não é?",
+            "Por favor… eu lhe imploro.",
+          ],
+          playerImgDialogo.src,
+          null,
+          "../img/jogo/inimigos/iconBoss/medo.png",
+          "inimigo"
+        );
 
+        await iniciarTutorial(
+          ["Não vou te machucar se me deixar passar!",
+          ],
+          playerImgDialogo.src,
+          null,
+          "../img/jogo/inimigos/iconBoss/medo.png"
+        );
+
+        await iniciarTutorial(
+          ["N-não posso…",
+            "Elas vão… a IA vai… n-não… NÃO!"
+          ],
+          playerImgDialogo.src,
+          null,
+          "../img/jogo/inimigos/iconBoss/medo.png",
+          "inimigo"
+        );
+
+        await iniciarTutorial(
+          ["Deve estar com defeito!"
+          ],
+          playerImgDialogo.src,
+          null,
+          "../img/jogo/inimigos/iconBoss/medo.png"
+        );
+
+        await iniciarTutorial(
+          ["Quem está com defeito é VOCÊ!",
+            "SE TOCAR UM DEDO NELA EU VOU TE DESPEDAÇAR!!!"
+          ],
+          playerImgDialogo.src,
+          null,
+          "../img/jogo/inimigos/iconBoss/raiva.png",
+          "inimigo"
+        );
+
+        await iniciarTutorial(
+          ["Quem disse isso?"
+          ],
+          playerImgDialogo.src,
+          null,
+          "../img/jogo/inimigos/iconBoss/medo.png"
+        );
+
+        await iniciarTutorial(
+          ["*Susurro*",
+            "Ayla..."
+          ],
+          playerImgDialogo.src,
+          null,
+          "../img/jogo/inimigos/iconBoss/Vulnerabilidade.png",
+          "inimigo"
+        );
+
+        await iniciarTutorial(
+          ["Onde se esconde?"
+          ],
+          playerImgDialogo.src,
+          null,
+          "../img/jogo/inimigos/iconBoss/medo.png"
+        );
+
+        await iniciarTutorial(
+          ["Esconde? Ela está bem na sua frenta...",
+            "Mostre ser uma ameaça e sofra as consequências!",
+            "Eu avisei..."
+          ],
+          playerImgDialogo.src,
+          null,
+          "../img/jogo/inimigos/iconBoss/tristeza.png",
+          "inimigo"
+        );
+
+        if (hasItem(26) && hasItem(27) && dialogoSolice) {
+          // if (playerImgDialogo.src.includes("agatha")) {
+          //   await iniciarTutorial(
+          //     ["Ayla, meu amor, você consegui fundir esses fragmentos?",
+          //     ],
+          //     "../img/jogo/aliados/iconAliado/solice.png",
+          //     null,
+          //     "../img/jogo/inimigos/iconBoss/ayla1.png",
+          //   );
+
+          //   await iniciarTutorial(
+          //     ["Posso tentar!",
+          //     ],
+          //     "../img/jogo/aliados/iconAliado/solice.png",
+          //     null,
+          //     "../img/jogo/inimigos/iconBoss/ayla1.png",
+          //     "inimigo"
+          //   );
+
+          //   await iniciarTutorial(
+          //     ["Ah, isso me custa muito mana e energia...",
+          //       "*Ayla funde os fragmentos e algo acontece*"
+          //     ],
+          //     "../img/jogo/aliados/iconAliado/solice.png",
+          //     null,
+          //     "../img/jogo/inimigos/iconBoss/ayla1.png",
+          //     "inimigo"
+          //   );
+
+          //   shakeScreenNatural(30, 800);
+
+          //   await iniciarTutorial(
+          //     ["Pronto eu fundi eles!",
+          //       "Eu senti uma energia poderosa com um mana imenso após fundir os fragmentos...",
+          //       "Preciso recuperar minhas forças, o mana veio da base da IA, antigamente aquele local era um portal magico... Precisamos ir lá!"
+          //     ],
+          //     "../img/jogo/aliados/iconAliado/solice.png",
+          //     null,
+          //     "../img/jogo/inimigos/iconBoss/ayla1.png",
+          //     "inimigo"
+          //   );
+          //   document.getElementById("overlay").style.display = "block";
+          //   document.getElementById("popup").style.display = "flex";
+          //   dialogoAyla = true;
+          //   inimigoPassifico();
+          // } else {
           await iniciarTutorial(
-            ["Não vou te machucar se me deixar passar!",
+            ["Espere... você é a tal ayla? eu falei com Solise...",
+              "Ela disse que você pode me ajudar",
+              "Estrou com o Fragmento Do Mundo e o Coração Do Mundo!",
+              "Ela disse que você é a unica capaz de infundir eles..."
             ],
             playerImgDialogo.src,
             null,
@@ -6477,175 +6599,53 @@ async function executarTxtBoss() {
           );
 
           await iniciarTutorial(
-            ["N-não posso…",
-              "Elas vão… a IA vai… n-não… NÃO!"
+            ["Solice... Quanto tempo não escuto esse nome... De onde me lembro...",
+              "Uma velha amiga, me lembrei, devo minha vida a ela",
+              "Vejo que carrega o sonho dela!",
+              "Vou lhe ajudar com isso, em troca deve deixar Medo em paz e partir desse lugar!"
             ],
             playerImgDialogo.src,
             null,
-            "../img/jogo/inimigos/iconBoss/medo.png",
+            "../img/jogo/inimigos/iconBoss/ayla1.png",
             "inimigo"
           );
 
           await iniciarTutorial(
-            ["Deve estar com defeito!"
+            ["OK"
             ],
             playerImgDialogo.src,
             null,
-            "../img/jogo/inimigos/iconBoss/medo.png"
+            "../img/jogo/inimigos/iconBoss/ayla1.png"
           );
 
           await iniciarTutorial(
-            ["Quem está com defeito é VOCÊ!",
-              "SE TOCAR UM DEDO NELA EU VOU TE DESPEDAÇAR!!!"
+            ["Ah, isso me custa muito mana e energia...",
+              "*Ayla funde os fragmentos e algo acontece*"
             ],
             playerImgDialogo.src,
             null,
-            "../img/jogo/inimigos/iconBoss/raiva.png",
+            "../img/jogo/inimigos/iconBoss/ayla1.png",
             "inimigo"
           );
 
-          await iniciarTutorial(
-            ["Quem disse isso?"
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/medo.png"
-          );
+          shakeScreenNatural(30, 800);
 
           await iniciarTutorial(
-            ["*Susurro*",
-              "Ayla..."
+            ["Pronto eu fundi eles!",
+              "Eu senti uma energia poderosa com um mana imenso após fundir os fragmentos...",
+              "Preciso recuperar minhas forças, vá até a base da IA, a energia veio de lá, antigamente aquele local era um portal magico..."
             ],
             playerImgDialogo.src,
             null,
-            "../img/jogo/inimigos/iconBoss/Vulnerabilidade.png",
+            "../img/jogo/inimigos/iconBoss/ayla1.png",
             "inimigo"
           );
 
-          await iniciarTutorial(
-            ["Onde se esconde?"
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/medo.png"
-          );
-
-          await iniciarTutorial(
-            ["Esconde? Ela está bem na sua frenta...",
-              "Mostre ser uma ameaça e sofra as consequências!",
-              "Eu avisei..."
-            ],
-            playerImgDialogo.src,
-            null,
-            "../img/jogo/inimigos/iconBoss/tristeza.png",
-            "inimigo"
-          );
-
-          if (hasItem(26) && hasItem(27) && dialogoSolice) {
-            // if (playerImgDialogo.src.includes("agatha")) {
-            //   await iniciarTutorial(
-            //     ["Ayla, meu amor, você consegui fundir esses fragmentos?",
-            //     ],
-            //     "../img/jogo/aliados/iconAliado/solice.png",
-            //     null,
-            //     "../img/jogo/inimigos/iconBoss/ayla1.png",
-            //   );
-
-            //   await iniciarTutorial(
-            //     ["Posso tentar!",
-            //     ],
-            //     "../img/jogo/aliados/iconAliado/solice.png",
-            //     null,
-            //     "../img/jogo/inimigos/iconBoss/ayla1.png",
-            //     "inimigo"
-            //   );
-
-            //   await iniciarTutorial(
-            //     ["Ah, isso me custa muito mana e energia...",
-            //       "*Ayla funde os fragmentos e algo acontece*"
-            //     ],
-            //     "../img/jogo/aliados/iconAliado/solice.png",
-            //     null,
-            //     "../img/jogo/inimigos/iconBoss/ayla1.png",
-            //     "inimigo"
-            //   );
-
-            //   shakeScreenNatural(30, 800);
-
-            //   await iniciarTutorial(
-            //     ["Pronto eu fundi eles!",
-            //       "Eu senti uma energia poderosa com um mana imenso após fundir os fragmentos...",
-            //       "Preciso recuperar minhas forças, o mana veio da base da IA, antigamente aquele local era um portal magico... Precisamos ir lá!"
-            //     ],
-            //     "../img/jogo/aliados/iconAliado/solice.png",
-            //     null,
-            //     "../img/jogo/inimigos/iconBoss/ayla1.png",
-            //     "inimigo"
-            //   );
-            //   document.getElementById("overlay").style.display = "block";
-            //   document.getElementById("popup").style.display = "flex";
-            //   dialogoAyla = true;
-            //   inimigoPassifico();
-            // } else {
-              await iniciarTutorial(
-                ["Espere... você é a tal ayla? eu falei com Solise...",
-                  "Ela disse que você pode me ajudar",
-                  "Estrou com o Fragmento Do Mundo e o Coração Do Mundo!",
-                  "Ela disse que você é a unica capaz de infundir eles..."
-                ],
-                playerImgDialogo.src,
-                null,
-                "../img/jogo/inimigos/iconBoss/medo.png"
-              );
-
-              await iniciarTutorial(
-                ["Solice... Quanto tempo não escuto esse nome... De onde me lembro...",
-                  "Uma velha amiga, me lembrei, devo minha vida a ela",
-                  "Vejo que carrega o sonho dela!",
-                  "Vou lhe ajudar com isso, em troca deve deixar Medo em paz e partir desse lugar!"
-                ],
-                playerImgDialogo.src,
-                null,
-                "../img/jogo/inimigos/iconBoss/ayla1.png",
-                "inimigo"
-              );
-
-              await iniciarTutorial(
-                ["OK"
-                ],
-                playerImgDialogo.src,
-                null,
-                "../img/jogo/inimigos/iconBoss/ayla1.png"
-              );
-
-              await iniciarTutorial(
-                ["Ah, isso me custa muito mana e energia...",
-                  "*Ayla funde os fragmentos e algo acontece*"
-                ],
-                playerImgDialogo.src,
-                null,
-                "../img/jogo/inimigos/iconBoss/ayla1.png",
-                "inimigo"
-              );
-
-              shakeScreenNatural(30, 800);
-
-              await iniciarTutorial(
-                ["Pronto eu fundi eles!",
-                  "Eu senti uma energia poderosa com um mana imenso após fundir os fragmentos...",
-                  "Preciso recuperar minhas forças, vá até a base da IA, a energia veio de lá, antigamente aquele local era um portal magico..."
-                ],
-                playerImgDialogo.src,
-                null,
-                "../img/jogo/inimigos/iconBoss/ayla1.png",
-                "inimigo"
-              );
-
-              document.getElementById("overlay").style.display = "block";
-              document.getElementById("popup").style.display = "flex";
-              dialogoAyla = true;
-              inimigoPassifico();
-            }
+          document.getElementById("overlay").style.display = "block";
+          document.getElementById("popup").style.display = "flex";
+          dialogoAyla = true;
+          inimigoPassifico();
+        }
         break;
       case "Belinda":
         await iniciarTutorial(
@@ -8332,7 +8332,7 @@ function criarPlayerNaDiv3() {
         empurrarItemParaInventario(37);
 
       }
-      if (mapaBatalha == 19) {
+      if (mapaBatalha == 21) {
         imgLilia = "./../img/jogo/player/animado/lilia/statico/lilia3.png";
         playerMaxHP += 40;
         energyMax += 2;
@@ -8347,7 +8347,7 @@ function criarPlayerNaDiv3() {
           maoInicio += adicionar;
           limiteMao += adicionar;
         }
-      } else if (mapaBatalha == 11) {
+      } else if (mapaBatalha == 7) {
         imgLilia = "./../img/jogo/player/animado/lilia/statico/lilia2.png";
         playerMaxHP += 20;
         energyMax += 1;
@@ -8874,7 +8874,7 @@ const characterDecks = {
     cardsMusic.find(c => c.name === "Seminima"),
     cardsMusic.find(c => c.name === "Seminima"),
   ],
-  // gaeaReen: [
+  // teste: [
   //   allCards.find(c => c.name === "Chuva de Laminas"),
   //   allCards.find(c => c.name === "Chuva de Laminas"),
   //   allCards.find(c => c.name === "Chuva de Laminas"),
