@@ -16,14 +16,17 @@
   <link rel="shortcut icon" href="img/site/logo/logo2.png" type="image/x-icon">
   <script src="js/jogo/functions/other/telaDeInicioJogo.js" defer></script>
 </head>
- 
+
 <body>
 
   <!-- AVISO FULLSCREEN (MOBILE / TABLET) -->
   <div class="screen-warning">
     <div class="warning-box">
       <h1>⚠️ Acesso restrito ⚠️</h1><br>
-      <p>Esta página é acessível apenas em computadores ou notebooks (resolução recomendada: 1825x1027px para melhor qualidade). O jogo pode apresentar desalinhamente, desproporção e até bugs se acessado por uma resolução muito inferior, a sua resolução atual é extremamente inferior (menor que 1226x701px), por favor acesse por uma resolução maior, esse nivel de resolução pode apresentar falhas criticas e diversos bugs visuais.</p><br>
+      <p>Esta página é acessível apenas em computadores ou notebooks (resolução recomendada: 1825x1027px para melhor
+        qualidade). O jogo pode apresentar desalinhamente, desproporção e até bugs se acessado por uma resolução muito
+        inferior, a sua resolução atual é extremamente inferior (menor que 1226x701px), por favor acesse por uma
+        resolução maior, esse nivel de resolução pode apresentar falhas criticas e diversos bugs visuais.</p><br>
       <p>Por favor, acesse por uma tela maior.</p>
     </div>
   </div>
@@ -44,24 +47,108 @@
       </div>
     </div>
 
+    <!-- POPUP CREDITOS -->
+    <div id="popupCreditos" class="popup-creditos">
+      <div class="popup-content">
 
+        <button class="fechar-popup" onclick="fecharCreditos()">✕</button>
 
-    
-  </div>
-</div>
+        <div class="credito-box">
+          <h1 class="gren">DEV FRONT DO JOGO</h1>
+          <p class="geral-color2">(Github)</p>
+          <!-- <a href="https://github.com/bryan7777777" target="_blank">
+            <p class="dev geral-color">bryan7777777</p>
+          </a>
+          <a href="https://github.com/TiaNemora" target="_blank">
+            <p class="dev geral-color">TiaNemora</p>
+          </a> -->
+          <p class="geral-color-alert">(Removido devido a participação do projeto no CRIA senac 2026)</p>
+          <p class="geral-color-alert">(Os autores do projeto foram ocultados devido o regulamento do CRIA)</p>
+        </div>
 
-   
+        <div class="credito-box">
+          <h1 class="red">HISTÓRIA DO JOGO</h1>
+          <p class="geral-color2">(Github)</p>
+          <!-- <a href="https://github.com/bryan7777777" target="_blank">
+            <p class="dev geral-color">bryan7777777</p>
+          </a>
+          <a href="https://github.com/TiaNemora" target="_blank">
+            <p class="dev geral-color">TiaNemora</p>
 
-    <div class="fita">
-      <h1 class="euOdeioMinhaVida">⚠️Atenção⚠️</h1>
-      <p class="euOdeioMinhaVida">Esta página é acessível apenas em computadores ou notebooks (resolução recomendada: 1825x1027px). O jogo pode apresentar desalinhamente, desproporção e até bugs se acessado por uma resolução muito inferior. Se sua resolução for menor que a recomendada diminua o zoom do site caso os itens fiquem muito grandes.</p>
-      <p class="euOdeioMinhaVida">O jogo pode demorar para carregar algumas imagens</p>
+            <a href="https://github.com/VGameleira" target="_blank">
+              <p class="dev geral-color">VGameleira</p>
+            </a>
+          </a>
+          <a href="https://github.com/Jakosjimn" target="_blank">
+            <p class="dev geral-color">Jakosjimn</p>
+          </a> -->
+          <p class="geral-color-alert">(Removido devido a participação do projeto no CRIA senac 2026)</p>
+          <p class="geral-color-alert">(Os autores do projeto foram ocultados devido o regulamento do CRIA)</p>
+        </div>
 
-      <p class="euOdeioMinhaVida">Evite apertar Tab (↹). O jogo foi construido em estrutura de layout em blocos. Apertar essa tecla resulta na quebra da estrutura do jogo (Caso aperte sem querer, feche o link e abra um novo para poder reiniciar).</p><br><br>
-     
+        <div class="credito-box">
+          <h1 class="purple">TRILHA SONORA</h1>
+
+          <p class="geral-color2">
+            Músicas por Kevin MacLeod (incompetech.com)
+          </p>
+
+          <p class="geral-color2">
+            Lost Time<br>
+            Senbazuru<br>
+            Galactic Rap<br>
+            The Complex<br>
+            Volatile Reaction
+          </p>
+
+          <p class="geral-color2">
+            Licenciadas sob Creative Commons Attribution 4.0 (CC BY 4.0)
+          </p>
+
+          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+            <p class="dev geral-color">Ver licença</p>
+          </a>
+        </div>
+
+        <div class="credito-box historia-box">
+          <h1 class="yellow">FERRAMENTAS USADAS PARA A CRIAÇÃO DE ARTES</h1>
+
+          <p class="geral-color2">Chatgpt</p>
+          <p class="geral-color2">Sora</p>
+          <p class="geral-color2">Gemini</p>
+          <p class="geral-color2">Canvas</p>
+        </div>
+
+      </div>
     </div>
 
-    <div id="versao"><p>0.31.42</p></div>
+    <div id="conquistas">
+      <button class="glitch-btn" onclick="abrirCreditos()">CREDITOS</button>
+    </div>
+
+
+  </div>
+  </div>
+
+
+
+  <div class="fita">
+    <h1 class="euOdeioMinhaVida">⚠️Atenção⚠️</h1>
+    <p class="euOdeioMinhaVida">Esta página é acessível apenas em computadores ou notebooks (resolução recomendada:
+      1825x1027px). O jogo pode apresentar desalinhamente, desproporção e até bugs se acessado por uma resolução muito
+      inferior. Se sua resolução for menor que a recomendada diminua o zoom do site caso os itens fiquem muito grandes.
+    </p>
+    <p class="euOdeioMinhaVida">O jogo pode demorar para carregar algumas imagens</p>
+
+    <p class="euOdeioMinhaVida">Evite apertar Tab (↹). O jogo foi construido em estrutura de layout em blocos. Apertar
+      essa tecla resulta na quebra da estrutura do jogo (Caso aperte sem querer, feche o link e abra um novo para poder
+      reiniciar).</p><br><br>
+
+  </div>
+
+  <div id="versao">
+    <p>0.31.42</p>
+  </div>
   </div>
 
 

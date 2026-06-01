@@ -177,7 +177,7 @@ function startFever() {
   if (feverMode === "lar") {
     jogo.style.backgroundImage =
       "url('../img/jogo/background/agathaLar.png')";
-    // trocarMusica(agathaLar);
+    trocarMusica(agathaLar);
     startAgathaSakura();
     stopHospitalMelancholy();
     trocarFramePlayer("agatha");
@@ -185,7 +185,7 @@ function startFever() {
   } else {
     jogo.style.backgroundImage =
       "url('../img/jogo/background/agathaTra.png')";
-    // trocarMusica(agathaTra);
+    trocarMusica(agathaTra);
     stopAgathaSakura();
     startHospitalMelancholy();
     trocarFramePlayer("agatha");
@@ -196,6 +196,17 @@ function startFever() {
 
 // =====================
 function disableFever() {
+  switch (identificadorBoss) {
+    case "IA":
+      trocarMusica(bossBatle_IA);
+      break;
+    case "Nemora":
+      trocarMusica(bossBatle_Nemora);
+      break;
+    default:
+      trocarMusica(defaltMusic);
+      break;
+  }
   trocarFramePlayer("agatha", true);
 
   feverActive = false;

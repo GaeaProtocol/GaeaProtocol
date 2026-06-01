@@ -305,11 +305,11 @@ body {
 .popup-content{
   width: 90vw;
   max-height: 85vh;
-
   overflow-y: auto;
   display: flex;
-  flex-direction: row;
-  gap:60px;
+  align-items: center;
+  flex-direction: column;
+  gap:20px;
 
   background: radial-gradient(
     circle,
@@ -389,6 +389,14 @@ body {
   color: #baffc9;
 }
 
+.geral-color2{
+  color: #ffffff;
+}
+
+.geral-color-alert{
+  color: #ffbaba;
+}
+
 /* BOTAO FECHAR */
 .fechar-popup{
   position: absolute;
@@ -436,7 +444,6 @@ body {
 
 .popup-content::-webkit-scrollbar-thumb{
   background: #d7ff75;
-
   border-radius: 10px;
 }
 
@@ -444,19 +451,9 @@ body {
   background-color: #111111d5;
   border-radius: 25px;
   padding: 25px;
-  min-height: 250px;
   border: #00c728 solid 2px;
-  margin-top: 50px;
-  max-width: 25%;
-}
 
-.credito-box_main{
-  display: flex;
-  flex-direction: column;
-}
-
-.credito-box_main .credito-box{
-  min-width: 90%;
+  width: 75%;
 }
 
 /* ANIMAÇÃO */

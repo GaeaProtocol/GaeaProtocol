@@ -7018,6 +7018,7 @@ async function executarTxtBoss() {
         break
       // 55555
       case "IA":
+        trocarMusica(bossBatle_IA);
         await iniciarTutorial(
           ["Alerta crítico…", "Uma presença ameaçadora foi detectada!", "Possivelmente é a IA"],
           "./../img/jogo/gaeazinha.jpg",
@@ -7219,6 +7220,7 @@ async function executarTxtBoss() {
         }
         break;
       case "Nemora":
+        trocarMusica(bossBatle_Nemora);
         if (playerImgDialogo.src.includes("gemea")) {
           await iniciarTutorial(
             ["Você entende?", "Yoshida"
@@ -11201,7 +11203,7 @@ function trocarMusica(novaMusica, fadeDuration = 2000, targetVolume = 1) {
   }
 }
 
-// trocarMusica(defaltMusic);
+trocarMusica(defaltMusic);
 
 configurarSelecaoPersonagem();
 

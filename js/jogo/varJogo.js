@@ -21,10 +21,11 @@ let custoVidaMaxMedico = 0; // Custo para aumentar vida máxima
 // CONFS - Configurações e estado visual/áudio
 let currentMusic = null;
 let musicFadeInterval = null;
-let defaltMusic = new Audio("./../audio/artblock.ogg"); // Música de fundo
-let agathaLar = new Audio("./../audio/FervorLar.mp3"); 
-let agathaTra = new Audio("./../audio/FervorTra.mp3"); 
-let agatha = new Audio("./../audio/agatha.mp3"); 
+let defaltMusic = new Audio("./../audio/Galactic_Rap.mp3"); // Música de fundo
+let bossBatle_IA = new Audio("./../audio/boss/The_Complex.mp3");
+let bossBatle_Nemora = new Audio("./../audio/boss/Volatile_Reaction.mp3");
+let agathaLar = new Audio("./../audio/agatha/Senbazuru.mp3"); 
+let agathaTra = new Audio("./../audio/Lost_Time.mp3"); 
 let showingFloat = false; // Se está mostrando texto flutuante
 let nemoraDef = false; // Estado de defesa de Nemora
 let nemoraAtk = false; // Estado de ataque de Nemora
