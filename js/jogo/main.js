@@ -4912,7 +4912,7 @@ async function executarTxtBoss() {
               "...",
               "Não…",
               "MAS ISSO NÃO IMPORTA!",
-              "No futuro você quebra meu PS24! Seu monstro!"
+              "No futuro você quebra meu console favorito o \"Ycaixa 465 versão delux\"! Seu monstro!"
             ],
             playerImgDialogo.src,
             null,
@@ -6272,22 +6272,23 @@ async function executarTxtBoss() {
         if (hasItem(26)) {
           dialogoSolice = true
           let imgTxt = ""
-          if (playerImgDialogo.src.includes("agatha")) {
-            imgTxt = "../img/jogo/aliados/iconAliado/solice.png"
-          } else {
-            imgTxt = "../img/jogo/inimigos/iconBoss/solice.png"
-          }
+          // if (playerImgDialogo.src.includes("agatha")) {
+          //   imgTxt = "../img/jogo/aliados/iconAliado/solice.png"
+          // } else {
+          //   imgTxt = "../img/jogo/inimigos/iconBoss/solice.png"
+          // }
+          imgTxt = "../img/jogo/inimigos/iconBoss/solice.png"
 
-          if (playerImgDialogo.src.includes("agatha")) {
-            await iniciarTutorial(
-              ["Você sabe algo sobre essa chave?",
-                "Tinha seu nome escrito na caixa que encontrei"
-              ],
-              playerImgDialogo.src,
-              "./../img/jogo/itens/frostKey.png",
-              imgTxt,
-            );
-          } else {
+          // if (playerImgDialogo.src.includes("agatha")) {
+          //   await iniciarTutorial(
+          //     ["Você sabe algo sobre essa chave?",
+          //       "Tinha seu nome escrito na caixa que encontrei"
+          //     ],
+          //     playerImgDialogo.src,
+          //     "./../img/jogo/itens/frostKey.png",
+          //     imgTxt,
+          //   );
+          // } else {
             await iniciarTutorial(
               ["Espere por favor!",
                 "Você sabe algo sobre essa chave?",
@@ -6297,7 +6298,7 @@ async function executarTxtBoss() {
               "./../img/jogo/itens/frostKey.png",
               imgTxt,
             );
-          }
+          // }
 
           await iniciarTutorial(
             ["Não é uma merá chave!",
@@ -6363,18 +6364,18 @@ async function executarTxtBoss() {
               imgTxt,
             );
 
-            if (playerImgDialogo.src.includes("agatha")) {
-              await iniciarTutorial(
-                ["Muitos morrerão tentando achar!",
-                  "Melhor deixar para lá",
-                  "Mas... Se achar ela, temos que falar com Ayla, ela tem poder suficiente para fundir as chaves!"
-                ],
-                playerImgDialogo.src,
-                null,
-                imgTxt,
-                "inimigo"
-              );
-            } else {
+            // if (playerImgDialogo.src.includes("agatha")) {
+            //   await iniciarTutorial(
+            //     ["Muitos morrerão tentando achar!",
+            //       "Melhor deixar para lá",
+            //       "Mas... Se achar ela, temos que falar com Ayla, ela tem poder suficiente para fundir as chaves!"
+            //     ],
+            //     playerImgDialogo.src,
+            //     null,
+            //     imgTxt,
+            //     "inimigo"
+            //   );
+            // } else {
               await iniciarTutorial(
                 ["Muitos morrerão tentando achar!",
                   "Você apenas deu sorte e essa chave me pertencia!",
@@ -6386,7 +6387,7 @@ async function executarTxtBoss() {
                 imgTxt,
                 "inimigo"
               );
-            }
+            // }
           }
         }
         break;
