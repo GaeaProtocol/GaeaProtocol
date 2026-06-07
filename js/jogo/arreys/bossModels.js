@@ -210,7 +210,7 @@ const bossModels = [
     {
       name: "Niji",
       hp: 1000,
-      dano: "10-175",
+      dano: "10-100",
       behavior: () => {
         const type = [
             "attack",
@@ -236,11 +236,11 @@ const bossModels = [
           case "heal":
             const faixa = Math.random();
 
-            if (faixa < 0.5) {
-              // 50% de chance
+            if (faixa < 0.55) {
+              // 55% de chance
               value = Math.floor(Math.random() * 21) + 10; // 10-30
             } else if (faixa < 0.9) {
-              // 40% de chance
+              // 35% de chance
               value = Math.floor(Math.random() * 30) + 31; // 31-60
             } else {
               // 10% de chance
@@ -249,7 +249,7 @@ const bossModels = [
             break;
 
           case "specialBoss":
-            value = 175;
+            value = 100;
             break;
         }
 
