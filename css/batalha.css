@@ -2351,6 +2351,17 @@ color: rgb(227, 90, 255);
   width: 500px;
 }
 
+.niji-gif{
+  position: absolute;
+
+  right: 100%;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 500px;
+}
+
 /* ENTRADA */
 .gif-enter{
   animation: gifEnter 1.2s forwards;
@@ -2359,6 +2370,16 @@ color: rgb(227, 90, 255);
 /* SAÍDA */
 .gif-exit{
   animation: gifExit 1s forwards;
+}
+
+/* ENTRADA */
+.gif-enter-niji{
+  animation: gifEnterNiji 1.2s forwards;
+}
+
+/* SAÍDA */
+.gif-exit-niji{
+  animation: gifExitNiji 1s forwards;
 }
 
 @keyframes gifEnter{
@@ -2379,6 +2400,24 @@ color: rgb(227, 90, 255);
 
 }
 
+@keyframes gifEnterNiji{
+
+  0%{
+    right: 100%;
+    animation-timing-function: linear;
+  }
+
+  80%{
+    right: 8%;
+    animation-timing-function: ease-out;
+  }
+
+  100%{
+    right: 0%;
+  }
+
+}
+
 @keyframes gifExit{
 
   0%{
@@ -2388,6 +2427,20 @@ color: rgb(227, 90, 255);
 
   100%{
     left: -60%;
+    opacity: 0;
+  }
+
+}
+
+@keyframes gifExitNiji{
+
+  0%{
+    right: 0%;
+    opacity: 1;
+  }
+
+  100%{
+    right: -60%;
     opacity: 0;
   }
 

@@ -206,6 +206,66 @@ const bossModels = [
       zona: 4
     }
   ],
+  [
+    {
+      name: "Niji",
+      hp: 1000,
+      dano: "10-175",
+      behavior: () => {
+        const type = [
+            "attack",
+            "attack",
+            "attack",
+            "attack",
+            "attackVida",
+            "attackVida",
+            "attackVida",
+            "heal",
+            "heal",
+            "specialBoss"
+          ][Math.floor(Math.random() * 10)];
+
+        let value;
+
+        switch (type) {
+          case "attackVida":
+            value = Math.floor(Math.random() * 21) + 20; // 20-40
+            break;
+
+          case "attack":
+          case "heal":
+            const faixa = Math.random();
+
+            if (faixa < 0.5) {
+              // 50% de chance
+              value = Math.floor(Math.random() * 21) + 10; // 10-30
+            } else if (faixa < 0.9) {
+              // 40% de chance
+              value = Math.floor(Math.random() * 30) + 31; // 31-60
+            } else {
+              // 10% de chance
+              value = Math.floor(Math.random() * 40) + 61; // 61-100
+            }
+            break;
+
+          case "specialBoss":
+            value = 175;
+            break;
+        }
+
+        return [
+          {
+            type,
+            value
+          }
+        ];
+      },
+      img: "../img/jogo/inimigos/animado/niji/statico/niji1.png",
+      tipoDano: "⁉️",
+      tipoVida: "🧿",
+      zona: 4
+    }
+  ],
   // 5555555555555555
 ];
 

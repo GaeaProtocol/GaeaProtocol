@@ -6289,15 +6289,15 @@ async function executarTxtBoss() {
           //     imgTxt,
           //   );
           // } else {
-            await iniciarTutorial(
-              ["Espere por favor!",
-                "Você sabe algo sobre essa chave?",
-                "Tinha seu nome escrito na caixa que encontrei"
-              ],
-              playerImgDialogo.src,
-              "./../img/jogo/itens/frostKey.png",
-              imgTxt,
-            );
+          await iniciarTutorial(
+            ["Espere por favor!",
+              "Você sabe algo sobre essa chave?",
+              "Tinha seu nome escrito na caixa que encontrei"
+            ],
+            playerImgDialogo.src,
+            "./../img/jogo/itens/frostKey.png",
+            imgTxt,
+          );
           // }
 
           await iniciarTutorial(
@@ -6376,17 +6376,17 @@ async function executarTxtBoss() {
             //     "inimigo"
             //   );
             // } else {
-              await iniciarTutorial(
-                ["Muitos morrerão tentando achar!",
-                  "Você apenas deu sorte e essa chave me pertencia!",
-                  "Caso consiga fale com Ayla, ela é capaz de infundir essa chave!",
-                  "Chega de falar, morra ou me derrote!"
-                ],
-                playerImgDialogo.src,
-                null,
-                imgTxt,
-                "inimigo"
-              );
+            await iniciarTutorial(
+              ["Muitos morrerão tentando achar!",
+                "Você apenas deu sorte e essa chave me pertencia!",
+                "Caso consiga fale com Ayla, ela é capaz de infundir essa chave!",
+                "Chega de falar, morra ou me derrote!"
+              ],
+              playerImgDialogo.src,
+              null,
+              imgTxt,
+              "inimigo"
+            );
             // }
           }
         }
@@ -7015,6 +7015,97 @@ async function executarTxtBoss() {
             "../img/jogo/inimigos/iconBoss/svetlana.png",
             "inimigo"
           );
+        }
+        break
+      case "Niji":
+        shakeScreenNatural();
+        if (playerImgDialogo.src.includes("criadora")) {
+          await iniciarTutorial(
+            [
+              "Sua alma nasceu condenada, pertence-me, entregue-me sua vida e seja grata",
+              "O que tu tens a dizer a mim?"
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/niji1.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            [
+              "Eu me lembro, foi você quem roubou todas as cores do templo. Por que você fez isso?",
+              "O que aquelas pessoas fizeram? Você tirou toda a cor do local e das pessoas, assim como suas vidas."
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/niji1.png"
+          );
+
+          await iniciarTutorial(
+            [
+              "Diz para mim, como enxerga tal tragédia se não sabes como é o carmesim?"
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/niji1.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            [
+              "O mestre do templo me disse, e também descreveu você. Além disso, eu vi você, mesmo que brevemente, tirando a alma de um monge, e depois fugiu como uma covarde.",
+              "SUA COVARDE, MATANDO INDEFESOS E FRACOS, ENFRENTE-ME, EU ESTOU AQUI!"
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/niji1.png"
+          );
+
+          shakeScreenNatural();
+          await iniciarTutorial(
+            [
+              "O-o que você disse…?",
+              "Eu não estava correndo de você, sua miserável desprezível. Eu apenas me afastava do sol, não de ti.",
+              "Com o meu despertar, depois de tantos anos… este mundo continua patético, igual a você. E sabe o pior? Foi extremamente prazeroso ver aqueles monges se contorcendo em agonia, implorando por suas miseráveis vidas.",
+              "Mas que conveniente… meia-noite, e você está aqui, bem diante de mim. Olhe nos meus olhos, se é que consegue sustentar esse olhar. Repita, se tiver coragem, tudo o que disse… porque esta noite é longa e você será a próxima a ceder."
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/niji1.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            [
+              "Não vou rebater com palavras, e sim com ações. Não vou permitir que você tire a vida dos meus amigos e as cores deste mundo. Venha me enfrentar, demônio.",
+              "SUA COVARDE, ENFRENTE-ME. EU ESTOU AQUI!"
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/niji1.png"
+          );
+
+        } else {
+          await iniciarTutorial(
+            [
+              "Mais um... verme. Não ouse dirigir qualquer palavra a mim. Você não é digno de sequer estar de pé em minha presença."
+
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/niji1.png",
+            "inimigo"
+          );
+
+          await iniciarTutorial(
+            [
+              "...",
+            ],
+            playerImgDialogo.src,
+            null,
+            "../img/jogo/inimigos/iconBoss/niji1.png"
+          );
+
         }
         break
       // 55555
@@ -9630,7 +9721,7 @@ function animarEspelhoFerrus(tipo, frames, opcoes = {}) {
     }, delay * 3);
   }
 }
-async function animacaoTra() {
+async function animacaoTra(reverse = false) {
 
   enginePaused = true;
 
@@ -9638,17 +9729,29 @@ async function animacaoTra() {
   container.id = "animacaoTra";
 
   const fundo = document.createElement("img");
-  fundo.src = "../img/jogo/player/animado/agatha/ultimoSuspiro.png";
-  fundo.className = "tra-fundo";
-
   const gif = document.createElement("img");
-  gif.src = "../img/jogo/player/animado/agatha/agatha3.gif";
-  gif.className = "tra-gif";
+
+  if (!reverse) {
+    fundo.src = "../img/jogo/player/animado/agatha/ultimoSuspiro.png";
+    gif.src = "../img/jogo/player/animado/agatha/agatha3.gif";
+    gif.className = "tra-gif";
+  } else {
+    fundo.src = "../img/jogo/inimigos/animado/niji/efeitos/niji1.png";
+    gif.src = "../img/jogo/inimigos/animado/niji/statico/niji1.png";
+    gif.className = "niji-gif";
+  }
+
+  fundo.className = "tra-fundo";
 
   const texto = document.createElement("div");
   texto.className = "tra-texto";
-  texto.innerText =
-    "“Levante-se. O seu quadro ainda não é definitivo. Enquanto há resposta, há chance de recuperação.”";
+  if (!reverse) {
+    texto.innerText =
+      "“Levante-se. O seu quadro ainda não é definitivo. Enquanto há resposta, há chance de recuperação.”";
+  } else {
+    texto.innerText =
+      "“Dê-me sua essência vital… Sua cor agora me pertence.”";
+  }
 
   container.appendChild(fundo);
   container.appendChild(gif);
@@ -9659,7 +9762,11 @@ async function animacaoTra() {
   void container.offsetWidth;
 
   fundo.classList.add("fundo-enter");
-  gif.classList.add("gif-enter");
+  if (!reverse) {
+    gif.classList.add("gif-enter");
+  } else {
+    gif.classList.add("gif-enter-niji");
+  }
 
   await new Promise(r => setTimeout(r, 900));
   texto.classList.add("texto-show");
@@ -9670,15 +9777,20 @@ async function animacaoTra() {
   texto.classList.add("texto-hide");
 
   fundo.classList.add("fundo-exit");
-  gif.classList.add("gif-exit");
+  if (!reverse) {
+    gif.classList.add("gif-exit");
+  } else {
+    gif.classList.add("gif-exit-niji");
+  }
 
   await new Promise(r => setTimeout(r, 1200));
 
   container.remove();
 
   enginePaused = false;
-
-  gerarNotas(100, "tra", true, "area", 1, true);
+  if (!reverse) {
+    gerarNotas(100, "tra", true, "area", 1, true);
+  }
 }
 function wait(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -9700,6 +9812,7 @@ async function enemyTurn() {
         case "attack":
         case "attackVida":
         case "morrer":
+        case "specialBoss":
           playerTomarDanoAnimacao();
           if (personagemSelecionado == "lilia" || personagemSelecionado == "porto" || personagemSelecionado == "gaeaReen" || personagemSelecionado == "lucius" || personagemSelecionado == "ferrus" || personagemSelecionado == "laranja" || personagemSelecionado == "amarelo" || personagemSelecionado == "criadora" || personagemSelecionado == "cleopatra") {
             podeSacudir = false;
@@ -9802,6 +9915,31 @@ async function enemyTurn() {
 
         // 🔱 ATAQUE DIRETO À VIDA
       } else if (act.type === "attackVida") {
+        let alvo = aliado && aliado.hp > 0 ? aliado : null;
+
+        if (alvo) {
+          alvo.hp -= act.value;
+          animateDamage(alvo.el, true);
+          floatText(alvo.el, `-${act.value}🔱`, "orange");
+
+          if (alvo.hp <= 0) {
+            matarAliado();
+          }
+          atualizarAliadoHUD();
+        } else {
+
+          // PLAYER
+          playerHP -= act.value;
+          animateDamage(document.getElementById("player"), podeSacudir);
+          floatText(document.getElementById("player"), `-${act.value}🔱`, "orange");
+          redScreenGlow(300, 30);
+
+          if (personagemSelecionado == "criadora") {
+            ativarPretoBranco();
+          }
+        }
+        // ☠️ ATAQUE ESPECIAL
+      } else if (act.type === "specialBoss") {
         let alvo = aliado && aliado.hp > 0 ? aliado : null;
 
         if (alvo) {
@@ -9996,6 +10134,32 @@ async function aplicarAnimacao(nomeBoss, acao) {
         }
         break;
 
+      case nomeBoss === "Niji":
+        if (acao === "attack") {
+          await animateEnemySimpleFrames(e, "niji");
+
+        } else if (acao === "attackVida") {
+          await animateEnemySimpleFrames(e, "nijiErro");
+
+        } else if (acao === "specialBoss") {
+          await animacaoTra(true);
+          await nijiGados({
+            container: e.el,
+            images: [
+              "../img/jogo/inimigos/animado/niji/efeitos/ghost0.png",
+              "../img/jogo/inimigos/animado/niji/efeitos/ghost1.png",
+              "../img/jogo/inimigos/animado/niji/efeitos/ghost2.png",
+              "../img/jogo/inimigos/animado/niji/efeitos/ghost3.png",
+              "../img/jogo/inimigos/animado/niji/efeitos/ghost4.png",
+              "../img/jogo/inimigos/animado/niji/efeitos/ghost5.png"
+            ],
+            totalTrails: 4,
+            duration: 900 // mais rápido
+          });
+          await shakeScreenNatural();
+        }
+        break;
+
       //================================
       //5555555555
       case nomeBoss === "Nemora" && (acao === "attack" || acao === "attackVida"):
@@ -10083,6 +10247,62 @@ function inimigoPassifico() {
   updateEnemyBars()
   checkEnemies()
   atualizarDinheiro();
+}
+function nijiGados({
+  container,
+  images = [],
+  totalTrails = 4,
+  duration = 1500,
+  width = 500,
+  height = 300,
+  zFrontCount = 2
+}) {
+  if (!images.length) return;
+
+  for (let i = 0; i < totalTrails; i++) {
+
+    const trail = document.createElement("img");
+
+    // escolhe imagem aleatória da lista
+    const randomIndex = Math.floor(Math.random() * images.length);
+    trail.src = images[randomIndex];
+
+    trail.style.position = "absolute";
+    trail.style.pointerEvents = "none";
+    trail.style.opacity = "0.85";
+    trail.style.filter = "brightness(1.4)";
+    trail.style.width = width + "px";
+    trail.style.height = height + "px";
+
+    const inFront = i < zFrontCount;
+    trail.style.zIndex = inFront ? "9999" : "1";
+
+    let offsetY = 0;
+    let offsetX = 0;
+
+    if (inFront) {
+      if (i === 0) { offsetY = -15; offsetX = 8; }
+      else { offsetY = -60; offsetX = 3; }
+    } else {
+      if (i === 2) { offsetY = 20; offsetX = 20; }
+      else { offsetY = -40; offsetX = 25; }
+    }
+
+    trail.style.top = (container.offsetTop + offsetY) + "px";
+    trail.style.left = `calc(100vw + ${offsetX}vw)`;
+
+    trail.style.transform = "translateX(0)";
+    trail.style.transition = `transform ${duration}ms linear`;
+
+    container.parentElement.appendChild(trail);
+
+    requestAnimationFrame(() => {
+      trail.style.transform = "translateX(-160vw)";
+    });
+
+    setTimeout(() => trail.remove(), duration + 150);
+  }
+  resetarBuffsPower();
 }
 //INIMIGOS DO SPAWN
 const peaoSpawn = {
@@ -10479,6 +10699,18 @@ function animateEnemySimpleFrames(enemy, boss) {
         f2: "../img/jogo/inimigos/animado/ayla/atk/ayla1.png",
         idle: "../img/jogo/inimigos/animado/ayla/statico/ayla1.png"
       };
+    } else if (boss === "niji") {
+      frames = {
+        f1: "../img/jogo/inimigos/animado/niji/atk/niji1.png",
+        f2: "../img/jogo/inimigos/animado/niji/atk/niji1.png",
+        idle: "../img/jogo/inimigos/animado/niji/statico/niji1.png"
+      };
+    } else if (boss === "nijiErro") {
+      frames = {
+        f1: "../img/jogo/inimigos/animado/niji/atk/niji1.png",
+        f2: "../img/jogo/inimigos/animado/niji/atk/niji2.png",
+        idle: "../img/jogo/inimigos/animado/niji/statico/niji1.png"
+      };
     } else {
       frames = {
         f1: "../img/jogo/inimigos/animado/ia/atk/ia1.png",
@@ -10568,6 +10800,7 @@ function animateDamage(el, tremida = true) {
   const isIsla2 = img.src.includes("PetroleoQuen");
   const isPeru = img.src.includes("/peru/");
   const isAyla = img.src.includes("/ayla1");
+  const isNiji = img.src.includes("/niji1");
 
   // ===============================
   //  SE FOR **IA** → animação própria
@@ -10607,6 +10840,10 @@ function animateDamage(el, tremida = true) {
   }
   if (isAyla) {
     animateIAHit(el, img, "ayla");
+    return;
+  }
+  if (isNiji) {
+    animateIAHit(el, img, "niji");
     return;
   }
 

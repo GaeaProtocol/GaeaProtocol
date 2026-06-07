@@ -45,6 +45,13 @@ function animateIAHit(el, img, boss) {
     frame3 = "../img/jogo/inimigos/animado/ayla/def/ayla1.png";
     idle = "../img/jogo/inimigos/animado/ayla/statico/ayla1.png";
   }
+  
+  if (boss === "niji") {
+    frame1 = "../img/jogo/inimigos/animado/niji/def/niji1.png";
+    frame2 = "../img/jogo/inimigos/animado/niji/def/niji2.png";
+    frame3 = "../img/jogo/inimigos/animado/niji/def/niji1.png";
+    idle = "../img/jogo/inimigos/animado/niji/statico/niji1.png";
+  }
 
   if (boss === "pedro") {
     frame1 = "../img/jogo/inimigos/animado/pedro/def/pedro1.png";
