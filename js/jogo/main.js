@@ -38,7 +38,7 @@ document.getElementById("fimselecao").addEventListener("click", () => {
     PULAR_TODO_TUTORIAL = false;
     iniciarTutorial([
       "Esse é o mapa!",
-      "Escolha seus caminhos com cuidado — cada decisão importa. Os caminhos são interligados por linhas, e apenas aqueles conectados são acessíveis.",
+      "Escolha seus caminhos com cuidado, cada decisão importa. Os caminhos são interligados por linhas, e apenas aqueles conectados são acessíveis.",
       "Existem diversos pontos: hospitais(💚), combates normais(💀), combates contra elites(☠️), lojas(🪙), eventos(❓) e combates contra o boss(🐺...).",
       "Os pontos de evento só ficam coloridos quando estão acessíveis e, após concluir o evento, não será possível voltar — apenas avançar!",
       "O jogo é um roguelike, ou seja, os mapas e inimigos sempre serão aleatórios. Cada jogatina será única!",
@@ -698,7 +698,7 @@ function checkEnemies() {
                 iniciarTutorial([
                   "Parabéns por vencer um inimigo tão forte!",
                   "Inimigos de elite e bosses concedem relíquias como recompensa!",
-                  "As relíquias mudam a forma como você joga — monte builds poderosas com elas!",
+                  "As relíquias mudam a forma como você joga, monte builds poderosas com elas!",
                   "Caso não queira nenhum item, você pode clicar em pular. Porém, não recomendo: itens NÃO se repetem. Se você não conseguir pegar todos, não se preocupe, eles podem voltar depois!",
                   "Apenas os que você já pegou param de aparecer!",
                   "As que já foram obtidas aparecerão na parte superior esquerda (passe o mouse sobre as relíquias para ver suas respectivas descrições)."
@@ -4292,7 +4292,7 @@ function mapaCanvas(dv, fases, caminhos, corMapa1, corMapa2, iconBoss) {
             "Após vencer uma luta, você receberá ouro. Quanto mais avançar, mais ouro ganhará. Elites e bosses fornecem quantias ainda maiores.",
             "O ouro que você ganha pode ser gasto aqui para comprar cartas ou pagar para descartar.",
             "O custo das cartas e upgrades vai aumentando conforme você progride, então não pare de coletar ouro!",
-            "IMPORTANTE: Sempre haverá 1 carta de cada tipo, comum/ raro/ fogo/ água/ terra/ gelo/ epico/ lendario",
+            "IMPORTANTE: Sempre haverá 1 carta de cada tipo, comum/ raro/ fogo/ água/ terra/ gelo/ épico/ lendário",
             "As únicas que dependem da sorte são as cintilantes, mas as demais que citei sempre vão estar na loja, permitindo e garantindo uma boa variedade, assim você pode montar o deck que quiser!",
             "No momento, você não tem ouro suficiente para comprar nada. Deixe-me te ajudar!",
             "Aqui! Pegue essas 50🪙, sinta-se a vontade para olhar a loja e experimente comprar algo!",
@@ -4306,7 +4306,7 @@ function mapaCanvas(dv, fases, caminhos, corMapa1, corMapa2, iconBoss) {
             "Uma batalha de elite!",
             "Os inimigos costumam ser mais fortes, mas as recompensas são melhores. Cabe a você escolher seu caminho!",
             "Eles costumam dropar relíquias, que são buffs passivos válidos apenas durante essa gameplay. Após uma derrota ou vitória, tudo é perdido: o ouro, o contador lixo reciclado e as cartas adicionadas ao deck!",
-            "Porém suas conquistas e score são salvos na sua conta!"
+            "Porém suas conquistas e score são salvos na sua conta! Caso você esteja conectado ao site e tenha feito login."
           ], "./../img/jogo/gaeazinha.jpg");
         } else if (tipo == "ferreiro") {
           iniciarTutorial([
@@ -4328,7 +4328,7 @@ function mapaCanvas(dv, fases, caminhos, corMapa1, corMapa2, iconBoss) {
           ], "./../img/jogo/gaeazinha.jpg");
         } else if (tipo == "hospital") {
           iniciarTutorial([
-            "Sempre antes de enfrentar um boss haverá um hospital — para nossa felicidade!",
+            "Sempre antes de enfrentar um boss haverá um hospital, para nossa felicidade!",
             "Cure-se antes de enfrentar um inimigo muito forte ou aumente sua vida máxima, caso esteja com bastante 🪙 você pode comprar alguma carta!"
           ], "./../img/jogo/gaeazinha.jpg");
 
@@ -4587,49 +4587,49 @@ async function executarTutorialCompleto() {
   ], "./../img/jogo/gaeazinha.jpg");
 
   await iniciarTutorial(
-    ["VERMELHAS / ATAQUE (⚔️) — focadas em causar dano (Cria lixo após o uso)."],
+    ["VERMELHAS / ATAQUE (⚔️) - focadas em causar dano (Cria lixo após o uso)."],
     "./../img/jogo/gaeazinha.jpg",
     "./../img/jogo/cards/vermelho.png"
   );
 
   await iniciarTutorial(
-    ["AZUIS / DEFESA (🛡️) — focadas em fornecer escudo (Cria lixo após o uso)."],
+    ["AZUIS / DEFESA (🛡️) - focadas em fornecer escudo (Cria lixo após o uso)."],
     "./../img/jogo/gaeazinha.jpg",
     "./../img/jogo/cards/azul.png"
   );
 
   await iniciarTutorial(
-    ["VERDES / BUFFS (💚) — focadas em buffs e cura (Cria lixo após o uso)."],
+    ["VERDES / BUFFS (💚) - focadas em buffs e cura (Cria lixo após o uso)."],
     "./../img/jogo/gaeazinha.jpg",
     "./../img/jogo/cards/verd.png"
   );
 
   await iniciarTutorial(
-    ["AMARELAS / RECICLAGEM (♻️) — focadas em reciclar as cinzas (Não cria lixo após o uso)."],
+    ["AMARELAS / RECICLAGEM (♻️) - focadas em reciclar as cinzas (Não cria lixo após o uso)."],
     "./../img/jogo/gaeazinha.jpg",
     "./../img/jogo/cards/amarelo1.png"
   );
 
   await iniciarTutorial(
-    ["CINZAS / LIXO (🗑️) — todas são consideradas LIXO (Não cria lixo após o uso, mas algumas especificas podem criar)."],
+    ["CINZAS / LIXO (🗑️) - todas são consideradas LIXO (Não cria lixo após o uso, mas algumas especificas podem criar)."],
     "./../img/jogo/gaeazinha.jpg",
     "./../img/jogo/cards/cinza.png"
   );
 
   await iniciarTutorial(
-    ["CINTILANTE (✨) — cartas extremamente raras e muito poderosas (Não cria lixo após o uso)."],
+    ["CINTILANTE (✨) - cartas extremamente raras e muito poderosas (Não cria lixo após o uso)."],
     "./../img/jogo/gaeazinha.jpg",
     "./../img/jogo/cards/cintilante1.png"
   );
 
   await iniciarTutorial(
-    ["ELEMENTAIS ([❄️] [💧→⛰️→🔥]) — focadas em marcar inimigos e se beneficiar dessas marcações, possui um sistema de combo entre os elementos e um sistema de fraqueza entre os elementos (Não cria lixo após o uso)."],
+    ["ELEMENTAIS ([❄️] [💧→⛰️→🔥]) - focadas em marcar inimigos e se beneficiar dessas marcações, possui um sistema de combo entre os elementos e um sistema de fraqueza entre os elementos (Não cria lixo após o uso)."],
     "./../img/jogo/gaeazinha.jpg",
     "./../img/jogo/cards/modeloElemental.png"
   );
 
   await iniciarTutorial(
-    ["ATENÇÃO: Todas as cartas possuem seus devidos custos de energia (🔷) na parte superior direita. Esse cristal (🔷) imenso ao lado do botão \"Pular Turno\" representa a quantidade de energia que você possiu, Ao usar uma carta você gasta dessa energia. Sua energia recarrega após passar seu turno. É possivel aumentar tanto a energia inicial quanto temporariamente."],
+    ["ATENÇÃO: Todas as cartas possuem seus devidos custos de energia (🔷) na parte superior direita. Esse cristal (🔷) imenso ao lado do botão \"Pular Turno\" representa a quantidade de energia que você possui, Ao usar uma carta você gasta dessa energia. Sua energia recarrega após passar seu turno. É possivel aumentar tanto a energia inicial quanto temporariamente."],
     "./../img/jogo/gaeazinha.jpg",
     "./../img/jogo/cards/modeloBasico.png"
   );
