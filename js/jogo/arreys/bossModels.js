@@ -209,7 +209,7 @@ const bossModels = [
   [
     {
       name: "Niji",
-      hp: 1000,
+      hp: 700,
       dano: "10-100",
       behavior: () => {
         const type = [
@@ -428,9 +428,9 @@ function bossAtivadoPorItem(inimigo) {
     } else {
       bossModels.push([{
         name: "IA",
-        hp: 570,
-        maxHp: 570,
-        dano: 25,
+        hp: 1000,
+        maxHp: 1000,
+        dano: 30,
         behavior() {
           return [
             {
