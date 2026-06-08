@@ -9178,14 +9178,14 @@ async function animarLiliaTransformacao() {
         };
         break;
       case "lilia":
-        if (mapaBatalha >= 19) {
+        if (mapaBatalha >= 22) {
           frames = {
             f1: "./../img/jogo/player/animado/lilia/atk/lilia111.png",
             f2: "./../img/jogo/player/animado/lilia/atk/lilia222.png",
             f3: "./../img/jogo/player/animado/lilia/atk/lilia333.png",
             idle: imgLilia || "./../img/jogo/player/animado/lilia/statico/lilia3.png"
           };
-        } else if (mapaBatalha >= 11) {
+        } else if (mapaBatalha >= 8) {
           frames = {
             f1: "./../img/jogo/player/animado/lilia/atk/lilia11.png",
             f2: "./../img/jogo/player/animado/lilia/atk/lilia22.png",
@@ -9534,12 +9534,12 @@ function playerTomarDanoAnimacao() {
 
         break;
       case "lilia":
-        if (mapaBatalha >= 19) {
+        if (mapaBatalha >= 22) {
           frames = {
             hit: "./../img/jogo/player/animado/lilia/def/lilia111.png",
             idle: imgLilia || "./../img/jogo/player/animado/lilia/statico/lilia3.png"
           };
-        } else if (mapaBatalha >= 11) {
+        } else if (mapaBatalha >= 8) {
           frames = {
             hit: "./../img/jogo/player/animado/lilia/def/lilia11.png",
             idle: imgLilia || "./../img/jogo/player/animado/lilia/statico/lilia2.png"
