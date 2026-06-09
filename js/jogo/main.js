@@ -9135,7 +9135,7 @@ async function animarLiliaTransformacao() {
         frames = {
           f1: "./../img/jogo/player/animado/bruno/atk/bruno1.png",
           f2: "./../img/jogo/player/animado/bruno/atk/bruno1.png",
-          f3: "./../img/jogo/player/animado/bruno/atk/bruno3.png",
+          f3: "./../img/jogo/player/animado/bruno/atk/bruno1.png",
           idle: "./../img/jogo/player/animado/bruno/statico/bruno1.png"
         };
         break;
