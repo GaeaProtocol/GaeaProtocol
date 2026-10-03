@@ -134,7 +134,7 @@ function configurarSelecaoPersonagem() {
       escudo: 0,
       mao: 6,
       img: "./../img/jogo/player/animado/gabriel/statico/gabriel1.png",
-      lor: "\"Eu odeio segundas.\"<br><br> -Gabriel o homem que odeia segundas",
+      lor: "Jorge nasceu com o sonho de ser um corredor famoso e quando a IA resolveu matar seu esporte favorito ele simplesmente decidiu ir contra, mesmo que seja perigoso, tanto o esporte quanto ir contra uma IA, ele defende que todos tem o direito de seguir seus sonhos independentemente de quais sejam.<br><br>\"Somos donos das nossas historias e vida. E eu odeio segundas feiras.\"<br><br> -Jorge o homem que odeia segundas",
       extras: [
         {
           img: "./../img/jogo/itens/olhoKraken.png",
